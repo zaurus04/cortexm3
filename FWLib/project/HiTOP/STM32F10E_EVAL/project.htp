@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<HiTOPProject>
+	<Windows>
+		<MDIState RTOS="0" Trace="0" Source="1" Maximized="1" SFRWindow="0" CoverageWindow="0"/>
+		<Window Id="SFRWindow">
+			<SFRDefinitions File="$(SYSTEMDIR)\Derivatives\ST Microelectronics\STM32F103Rx.xsfr"/>
+			<WindowState State="Maximized"/>
+			<Rectangle State="Normal">
+				<Size cx="693" cy="339"/>
+				<Position x="22" y="29"/>
+			</Rectangle>
+			<Rectangle State="Maximized">
+				<Size cx="811" cy="518"/>
+				<Position x="-4" y="-30"/>
+			</Rectangle>
+		</Window>
+		<Window Id="Disassembly">
+			<List Id="" BkColor="16777215" TextColor="0" DisableColSizing="0">
+				<Header Bold="1"/>
+				<Column Id="0" Order="0" Title="State" Width="24" Visible="1" Alignment="LEFT"/>
+				<Column Id="11" Order="1" Title="Address" Visible="1" RelWidth="0.1723438" Alignment="LEFT"/>
+				<Column Id="12" Order="2" Title="OpCode" Visible="1" RelWidth="0.1326088" Alignment="LEFT"/>
+				<Column Id="13" Order="3" Title="Instruction" Visible="1" RelWidth="0.6955228" Alignment="LEFT"/>
+			</List>
+			<Tabs Count="0"/>
+		</Window>
+		<Window Id="Source">
+			<Tabs Count="1" Active="0">
+				<Tab Pos="0" Module="cstart_thumb2" FilePath="C:\VSS\Big Piranha\Introduction Package\FIRMWARE\STM32F10xFWLib\FWLib\project\HiTOP\Source\cstart_thumb2.asm" Application="project"/>
+			</Tabs>
+			<UpdateOnRunning Update="0"/>
+			<WindowState State="Maximized"></WindowState>
+			<Rectangle State="Minimized">
+				<Size cx="160" cy="24"></Size>
+				<Position x="0" y="352"></Position>
+			</Rectangle>
+			<Rectangle State="Normal">
+				<Size cx="896" cy="488"></Size>
+				<Position x="0" y="0"></Position>
+			</Rectangle>
+			<Rectangle State="Maximized">
+				<Size cx="811" cy="518"></Size>
+				<Position x="-4" y="-30"></Position>
+			</Rectangle>
+		</Window>
+		<Window Id="Watch">
+			<Tabs Sel="0" Count="2">
+				<Tab Pos="0" Title="Locals">
+					<UpdateOnRunning Update="0"/>
+					<DisplayMode Mode="0"/>
+					<List Id="" BkColor="16777215" SortAsc="1" SortCol="-1" TextColor="0" DisableColSizing="0">
+						<Header Bold="1"/>
+						<Column Id="12" Order="0" Title="Variables" Visible="1" RelWidth="0.3722848" Alignment="LEFT"/>
+						<Column Id="13" Order="1" Title="Value" Visible="1" RelWidth="0.6277588" Alignment="LEFT"/>
+					</List>
+				</Tab>
+				<Tab Pos="1" Title="Watch1">
+					<UpdateOnRunning Update="0"/>
+					<DisplayMode Mode="0"/>
+					<List Id="" BkColor="16777215" SortAsc="1" SortCol="-1" TextColor="0" DisableColSizing="0">
+						<Header Bold="1"/>
+						<Column Id="11" Order="0" Title="ID" Visible="1" RelWidth="0.1942108" Alignment="LEFT"/>
+						<Column Id="12" Order="1" Title="Expression" Visible="1" RelWidth="0.3000928" Alignment="LEFT"/>
+						<Column Id="13" Order="2" Title="Value" Visible="1" RelWidth="0.5059748" Alignment="LEFT"/>
+						<Watches></Watches>
+					</List>
+				</Tab>
+			</Tabs>
+		</Window>
+		<Window Id="Memory">
+			<Tabs Sel="0" Count="4">
+				<Tab Pos="0" Title="Mem0">
+					<UpdateOnRunning Update="0"/>
+					<List Id="" BkColor="16777215" TextColor="0" DisableColSizing="0">
+						<Memory Format="DWORD" SymbolicAddresses="1">
+							<Address Hex="0x63FFFF40" Symbol="0x63FFFF40"/>
+						</Memory>
+						<Header Bold="1"/>
+						<Column Id="11" Order="0" Title="Address" Width="94" Visible="1" Alignment="RIGHT"/>
+						<Column Id="12" Order="1" Title="Data" Width="302" Visible="1" Alignment="LEFT"/>
+						<Column Id="13" Order="2" Title="ASCII" Width="142" Visible="1" Alignment="LEFT"/>
+					</List>
+				</Tab>
+				<Tab Pos="1" Title="Flash">
+					<List Id="" BkColor="16777215" TextColor="0" DisableColSizing="0">
+						<Memory Format="DWORD" SymbolicAddresses="1">
+							<Address Hex="0x08000552" Symbol="0x08000552"/>
+						</Memory>
+						<Header Bold="1"/>
+						<Column Id="11" Order="0" Title="Address" Width="198" Visible="1" Alignment="RIGHT"/>
+						<Column Id="12" Order="1" Title="Data" Width="302" Visible="1" Alignment="LEFT"/>
+						<Column Id="13" Order="2" Title="ASCII" Width="142" Visible="1" Alignment="LEFT"/>
+					</List>
+					<UpdateOnRunning Update="0"/>
+				</Tab>
+				<Tab Pos="2" Title="RAM">
+					<List Id="" BkColor="16777215" TextColor="0" DisableColSizing="0">
+						<Memory Format="DWORD" SymbolicAddresses="1">
+							<Address Hex="0x200000E0" Symbol="0x200000E0"/>
+						</Memory>
+						<Header Bold="1"/>
+						<Column Id="11" Order="0" Title="Address" Width="198" Visible="1" Alignment="RIGHT"/>
+						<Column Id="12" Order="1" Title="Data" Width="302" Visible="1" Alignment="LEFT"/>
+						<Column Id="13" Order="2" Title="ASCII" Width="142" Visible="1" Alignment="LEFT"/>
+					</List>
+					<UpdateOnRunning Update="0"/>
+				</Tab>
+				<Tab Pos="3" Title="Base">
+					<List Id="" BkColor="16777215" TextColor="0" DisableColSizing="0">
+						<Memory Format="DWORD" SymbolicAddresses="1">
+							<Address Hex="0x00000000" Symbol="_lc_t2_longveneertarget"/>
+						</Memory>
+						<Header Bold="1"/>
+						<Column Id="11" Order="0" Title="Address" Width="198" Visible="1" Alignment="RIGHT"/>
+						<Column Id="12" Order="1" Title="Data" Width="302" Visible="1" Alignment="LEFT"/>
+						<Column Id="13" Order="2" Title="ASCII" Width="142" Visible="1" Alignment="LEFT"/>
+					</List>
+					<UpdateOnRunning Update="0"/>
+				</Tab>
+			</Tabs>
+		</Window>
+		<Window Id="Emulator State">
+			<Tabs>
+				<Tab Pos="0">
+					<List Id="" BkColor="16777215" SortAsc="1" SortCol="-1" TextColor="0" DisableColSizing="0">
+						<Header Bold="1"/>
+						<Column Id="10" Order="0" Title="No" Visible="1" RelWidth="0.1250148" Alignment="LEFT"/>
+						<Column Id="11" Order="1" Title="Id" Visible="1" RelWidth="0.2500148" Alignment="LEFT"/>
+						<Column Id="12" Order="2" Title="Counter" Visible="1" RelWidth="0.2500148" Alignment="LEFT"/>
+						<Column Id="13" Order="3" Title="Use" Visible="1" RelWidth="0.2500148" Alignment="LEFT"/>
+						<Column Id="14" Order="4" Title="Occured" Visible="1" RelWidth="0.1250148" Alignment="LEFT"/>
+					</List>
+				</Tab>
+				<Tab Pos="1">
+					<List Id="" BkColor="16777215" SortAsc="1" SortCol="-1" TextColor="0" DisableColSizing="0">
+						<Header Bold="1"/>
+						<Column Id="10" Order="0" Title="No" Visible="1" RelWidth="0.1250008" Alignment="LEFT"/>
+						<Column Id="11" Order="1" Title="Id" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="12" Order="2" Title="Counter" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="13" Order="3" Title="Use" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="14" Order="4" Title="Occured" Visible="1" RelWidth="0.1250008" Alignment="LEFT"/>
+					</List>
+				</Tab>
+				<Tab Pos="4">
+					<List Id="" BkColor="16777215" SortAsc="1" SortCol="-1" TextColor="0" DisableColSizing="0">
+						<Header Bold="1"/>
+						<Column Id="10" Order="0" Title="No" Visible="1" RelWidth="0.1250008" Alignment="LEFT"/>
+						<Column Id="11" Order="1" Title="Id" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="12" Order="2" Title="Counter" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="13" Order="3" Title="Use" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="14" Order="4" Title="Occured" Visible="1" RelWidth="0.1250008" Alignment="LEFT"/>
+					</List>
+				</Tab>
+				<Tab Pos="5">
+					<List Id="" BkColor="16777215" SortAsc="1" SortCol="-1" TextColor="0" DisableColSizing="0">
+						<Header Bold="1"/>
+						<Column Id="10" Order="0" Title="No" Visible="1" RelWidth="0.1250008" Alignment="LEFT"/>
+						<Column Id="11" Order="1" Title="Id" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="12" Order="2" Title="Counter" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="13" Order="3" Title="Use" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="14" Order="4" Title="Occured" Visible="1" RelWidth="0.1250008" Alignment="LEFT"/>
+					</List>
+				</Tab>
+				<Tab Pos="2">
+					<List Id="" BkColor="16777215" SortAsc="1" SortCol="-1" TextColor="0" DisableColSizing="0">
+						<Header Bold="1"/>
+						<Column Id="10" Order="0" Title="No" Visible="1" RelWidth="0.1250008" Alignment="LEFT"/>
+						<Column Id="11" Order="1" Title="Id" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="12" Order="2" Title="Counter" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="13" Order="3" Title="Use" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="14" Order="4" Title="Occured" Visible="1" RelWidth="0.1250008" Alignment="LEFT"/>
+					</List>
+				</Tab>
+				<Tab Pos="7">
+					<List Id="" BkColor="16777215" SortAsc="1" SortCol="-1" TextColor="0" DisableColSizing="0">
+						<Header Bold="1"/>
+						<Column Id="10" Order="0" Title="No" Visible="1" RelWidth="0.1250008" Alignment="LEFT"/>
+						<Column Id="11" Order="1" Title="Id" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="12" Order="2" Title="Counter" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="13" Order="3" Title="Use" Visible="1" RelWidth="0.2500008" Alignment="LEFT"/>
+						<Column Id="14" Order="4" Title="Occured" Visible="1" RelWidth="0.1250008" Alignment="LEFT"/>
+					</List>
+				</Tab>
+			</Tabs>
+		</Window>
+		<Window Id="Breakpoint">
+			<Tabs Sel="1">
+				<Tab Pos="0" Title="Code">
+					<Breaks/>
+					<List Id="" BkColor="16777215" SortAsc="1" SortCol="-1" TextColor="0" DisableColSizing="0">
+						<Header Bold="1"/>
+						<Column Id="11" Order="0" Title="ID" Visible="1" RelWidth="0.2500098" Alignment="LEFT"/>
+						<Column Id="12" Order="1" Title="Address" Visible="1" RelWidth="0.3106158" Alignment="LEFT"/>
+						<Column Id="13" Order="2" Title="Length" Visible="1" RelWidth="0.0833428" Alignment="LEFT"/>
+						<Column Id="16" Order="3" Title="Type" Visible="1" RelWidth="0.3560708" Alignment="LEFT"/>
+					</List>
+				</Tab>
+				<Tab Pos="1" Title="Data">
+					<Breaks/>
+					<List Id="" BkColor="16777215" SortAsc="1" SortCol="-1" TextColor="0" DisableColSizing="0">
+						<Header Bold="1"/>
+						<Column Id="11" Order="0" Title="ID" Visible="1" RelWidth="0.2500028" Alignment="LEFT"/>
+						<Column Id="12" Order="1" Title="Address" Visible="1" RelWidth="0.3106088" Alignment="LEFT"/>
+						<Column Id="13" Order="2" Title="Length" Visible="1" RelWidth="0.0833358" Alignment="LEFT"/>
+						<Column Id="16" Order="3" Title="Type" Visible="1" RelWidth="0.3560638" Alignment="LEFT"/>
+					</List>
+				</Tab>
+			</Tabs>
+		</Window>
+		<Window Id="TraceFilter">
+			<Tabs>
+				<Tab Pos="0">
+					<Triggers/>
+				</Tab>
+				<Tab Pos="1">
+					<Regions/>
+				</Tab>
+			</Tabs>
+		</Window>
+		<Window Id="Profile">
+			<Tabs>
+				<Tab Pos="0">
+					<UpdateOnRunning Update="0"/>
+					<List Id="" BkColor="16777215" SortAsc="1" SortCol="-1" TextColor="0" DisableColSizing="0">
+						<Header Bold="1"/>
+						<Column Id="11" Order="0" Title="Id" Visible="1" RelWidth="0.2275868" Alignment="LEFT"/>
+						<Column Id="12" Order="1" Title="Address" Visible="1" RelWidth="0.2827598" Alignment="LEFT"/>
+						<Column Id="13" Order="2" Title="Activity" Visible="1" RelWidth="0.4000008" Alignment="LEFT"/>
+						<Column Id="14" Order="3" Title="Time" Visible="1" RelWidth="0.0896558" Alignment="LEFT"/>
+					</List>
+					<State ModeAbsolute="0" UpdateEnabled="0"/>
+				</Tab>
+			</Tabs>
+			<List Id=""/>
+		</Window>
+		<Window Id="Coverage">
+			<Tree/>
+		</Window>
+		<Window Id="FileView" RelativePath="Relative2Project">
+			<ApplFolder Id="project" State="Expanded">
+				<Folder Id="Source Files" State="Expanded">
+					<File Id="..\Source\cortexm3_macro.asm"/>
+					<File Id="..\Source\cstart_thumb2.asm"/>
+					<File Id="..\Source\inithardware.asm"/>
+					<File Id="..\Source\initvectortable.asm"/>
+					<File Id="..\..\main.c"/>
+					<File Id="..\..\stm32f10x_it.c"/>
+				</Folder>
+				<Folder Id="Header Files" State="Not_Expanded">
+					<File Id="..\stm32f10x_conf.h"/>
+					<File Id="..\..\stm32f10x_it.h"/>
+				</Folder>
+				<Folder Id="FWLiB sources" State="Not_Expanded">
+					<File Id="..\..\..\library\src\stm32f10x_adc.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_bkp.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_can.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_crc.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_dac.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_dbgmcu.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_dma.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_exti.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_flash.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_fsmc.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_gpio.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_i2c.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_iwdg.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_lib.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_nvic.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_pwr.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_rcc.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_rtc.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_sdio.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_spi.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_systick.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_tim.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_usart.c"/>
+					<File Id="..\..\..\library\src\stm32f10x_wwdg.c"/>
+				</Folder>
+				<Folder Id="Insert a new folder into the project" State="Not_Expanded" RelativePath=""/>
+			</ApplFolder>
+		</Window>
+	</Windows>
+	<Version>V5.20</Version>
+	<Directories>
+		<Directory Id="ProjectAddApplication" Dir="C:\VSS\Big Piranha\Introduction Package\FIRMWARE\STM32F10xFWLib\FWLib\project\HiTOP\Project\objects\project.elf"/>
+	</Directories>
+	<DebugDevice>
+		<TargetProcessor Id="PARM"/>
+		<Derivative Id="STM32F103ZE" File="$(SYSTEMDIR)\Derivatives\ST Microelectronics\.\..\Arm\Default.drv" Vendor="ST Microelectronics"/>TANTINO_CORTEX_M3
+		<SystemDir Path="C:\Program Files\Hitex\HiTOP53-CTX\Tantino-Cortex"/>
+		<Communication>
+			<Port>USB</Port>
+			<DeviceName>Tantino for Cortex-10003</DeviceName>
+			<PortAddress Value="-2147483648"/>
+			<BaudRate Value="0"/>
+		</Communication>
+		<ARMConfiguration Id="STM32F103ZE" SWJDP="1" Vendor="ST Microelectronics" EMB_ICE="0" Endianes="0" ProcType="30" ETM_EXIST="0" MCUFamily="STM32" RTCK_USED="0" Exceptions="cortex-M3 vectors" INTctl_Base="0x00000000" TRACE_AVAIL="1" DeviceToTest="2" ExtMemoryItf="YES" OnChipRAMAdr="0x20000000" OnChipRAMSize="0x10000" EndianessFixed="1" INT_controller="STM32_NVIC" OnChipFlashAdr="0x8000000" OnChipFlashSize="0x80000" IR_CountBitsOfTD="4" CountDevicesInChain="2" IR_CountBitsBeforeTD="5" IR_CountBitsBehindTD="0"/>
+	</DebugDevice>
+	<StartupScript File=".\Settings\StartupScript.scr" ProjRelative="1"/>
+	<EditorOptions>
+		<Font lfHeight="-13" lfWeight="400" ColorBack="16777215" ColorText="0" lfQuality="0" lfFaceName="Courier New" lfOutPrecision="0" ColorHiLiteBack="12937777" ColorHiLiteText="16777215" lfClipPrecision="0" lfPitchAndFamily="0"/>
+		<Tabulators Size="4" TabWithSpace="0"/>
+		<Options WideCaret="0" AutoIndent="1" AutoReload="0" HScrollBar="1" VScrollBar="1" LineNumbers="0" VirtualSpace="0" SyntaxColoring="1"/>
+	</EditorOptions>
+	<ConfigurationOptions>
+		<ProcessorSettings>
+			<ProcessorSetting Id="TarResHi" Value="0" Element="    50ms"/>
+			<ProcessorSetting Id="DefMemAc" Value="2" Element="   32bit"/>
+			<ProcessorSetting Id="SysClock" Value="0" Element="SysClock"/>
+			<ProcessorSetting Id="TarReTAP" Value="1" Element="     yes"/>
+			<ProcessorSetting Id="TarResLo" Value="1" Element="   100ms"/>
+		</ProcessorSettings>
+		<EmulatorSettings>
+			<EmulatorSetting Id="TAPClk" Value="6" Element="  6.0MHz"/>
+			<EmulatorSetting Id="TARRESTA" Value="1" Element="     yes"/>
+			<EmulatorSetting Id="BREAKSTA" Value="1" Element="     yes"/>
+			<EmulatorSetting Id="UPDWRCTI" Value="0" Element=""/>
+			<EmulatorSetting Id="SWVFeat" Value="0" Element="OFF"/>
+			<EmulatorSetting Id="SysClock" Value="0" Element=""/>
+			<EmulatorSetting Id="TSPRESC" Value="1" Element="064"/>
+		</EmulatorSettings>
+		<GeneralSettings>
+			<GeneralSetting Id="TraceRecordingMode" Value="0" Element="Cycles"/>
+			<GeneralSetting Id="TraceRegionMode" Value="0" Element="Disable"/>
+			<GeneralSetting Id="TraceInitialState" Value="0" Element="On"/>
+			<GeneralSetting Id="TraceBufferOnStart" Value="0" Element="Refill"/>
+			<GeneralSetting Id="TraceOnOverflow" Value="0" Element="Overwrite"/>
+			<GeneralSetting Id="TraceDisplayMode" Value="0" Element="Backward"/>
+			<GeneralSetting Id="TraceBusState" Value="0" Element=""/>
+			<GeneralSetting Id="TriggerBusState" Value="0" Element=""/>
+			<GeneralSetting Id="TriggerDataType" Value="0" Element=""/>
+			<GeneralSetting Id="TriggerCounterMode" Value="0" Element=""/>
+			<GeneralSetting Id="TriggerBreakAction" Value="0" Element=""/>
+			<GeneralSetting Id="TriggerTraceAction" Value="0" Element=""/>
+			<GeneralSetting Id="TriggerRealtimerAction" Value="0" Element=""/>
+			<GeneralSetting Id="TimeTriggerAction" Value="0" Element=""/>
+			<GeneralSetting Id="ProtectionMode" Value="0" Element=""/>
+			<GeneralSetting Id="BankMode" Value="0" Element=""/>
+			<GeneralSetting Id="BankBootBank" Value="0" Element=""/>
+			<GeneralSetting Id="BankLoadBank" Value="0" Element=""/>
+			<GeneralSetting Id="BankCurrBank" Value="0" Element=""/>
+			<GeneralSetting Id="BankIntMode" Value="0" Element=""/>
+		</GeneralSettings>
+	</ConfigurationOptions>
+	<PostLoadScript File=".\Settings\reset_go_main.scr" ProjRelative="1"/>
+	<IDESave/>
+	<ScreenLayouts Count="1">
+		<Layout Pos="0" Description="Default">
+			<Dockinglayout>
+				<Default>
+					<Summary Panes="37" Client="23" TopContainer="16"></Summary>
+					<Pane-1 ID="40364" Type="0" Title="Workspace - ModuleView\nModuleView" DockingCX="200" DockingCY="120" LastHolder="21" DockingHolder="21"></Pane-1>
+					<Pane-2 ID="40365" Tag="151481808" Type="0" Title="Workspace - FileView\nFileView" DockingCX="200" DockingCY="120" LastHolder="21" DockingHolder="21"></Pane-2>
+					<Pane-3 ID="40100" Tag="150818872" Type="0" Title="Register" DockingCX="200" DockingCY="120" LastHolder="25" DockingHolder="25"></Pane-3>
+					<Pane-4 ID="40932" Tag="151399024" Type="0" Title="Emulator State" DockingCX="200" DockingCY="120" LastHolder="26" DockingHolder="26"></Pane-4>
+					<Pane-5 ID="10001" Type="0" Title="Output" DockingCX="200" DockingCY="120" LastHolder="28" DockingHolder="28"></Pane-5>
+					<Pane-6 ID="40001" Tag="150921952" Type="0" Title="Watch - Watch1\nWatch1" DockingCX="200" DockingCY="120" LastHolder="28" DockingHolder="28" FloatingHolder="31"></Pane-6>
+					<Pane-7 ID="40050" Tag="77501808" Type="0" Title="Memory - Mem0\nMem0" DockingCX="200" DockingCY="120" LastHolder="28" DockingHolder="28"></Pane-7>
+					<Pane-8 ID="40053" Type="0" Title="Memory - Base\nBase" DockingCX="200" DockingCY="120" LastHolder="28" DockingHolder="28" FloatingHolder="37"></Pane-8>
+					<Pane-9 ID="40052" Type="0" Title="Memory - RAM\nRAM" DockingCX="200" DockingCY="120" LastHolder="28" DockingHolder="28"></Pane-9>
+					<Pane-10 ID="40000" Type="0" Title="Watch - Locals\nLocals" DockingCX="200" DockingCY="120" LastHolder="28" DockingHolder="28" FloatingHolder="31"></Pane-10>
+					<Pane-11 ID="40051" Type="0" Title="Memory - Flash\nFlash" DockingCX="200" DockingCY="120" LastHolder="28" DockingHolder="28" FloatingHolder="34"></Pane-11>
+					<Pane-12 ID="40110" Type="0" Title="Callstack" DockingCX="200" DockingCY="120" LastHolder="21" DockingHolder="21"></Pane-12>
+					<Pane-13 Type="5" Panes="0" Direction="0"></Pane-13>
+					<Pane-14 Type="5" Panes="0" Direction="1"></Pane-14>
+					<Pane-15 Type="5" Panes="0" Direction="3"></Pane-15>
+					<Pane-16 Type="2" Panes="2" Pane-1="17" Pane-2="27" DockingCY="847"></Pane-16>
+					<Pane-17 Type="2" Horiz="1" Panes="1" Pane-1="18" DockingCY="484"></Pane-17>
+					<Pane-18 Type="2" Horiz="1" Panes="2" Pane-1="19" Pane-2="24" DockingCX="1280" DockingCY="388"></Pane-18>
+					<Pane-19 Type="2" Panes="1" Pane-1="20" DockingCX="1133"></Pane-19>
+					<Pane-20 Type="2" Horiz="1" Panes="2" Pane-1="21" Pane-2="22" DockingCX="1032" DockingCY="342"></Pane-20>
+					<Pane-21 Type="1" Panes="2" Pane-1="1" Pane-2="2" Selected="2" DockingCX="326" DockingCY="120"></Pane-21>
+					<Pane-22 Type="2" Panes="1" Pane-1="23" DockingCX="803"></Pane-22>
+					<Pane-23 Type="4"></Pane-23>
+					<Pane-24 Type="2" Panes="2" Pane-1="25" Pane-2="26" DockingCX="143" DockingCY="442"></Pane-24>
+					<Pane-25 Type="1" Panes="1" Pane-1="3" Selected="3" DockingCX="200" DockingCY="300"></Pane-25>
+					<Pane-26 Type="1" Panes="1" Pane-1="4" Selected="4" DockingCX="287" DockingCY="138"></Pane-26>
+					<Pane-27 Type="2" Horiz="1" Panes="1" Pane-1="28" DockingCX="1280" DockingCY="359"></Pane-27>
+					<Pane-28 Type="1" Panes="5" Pane-1="5" Pane-2="6" Pane-3="7" Pane-4="8" Pane-5="9" Selected="5" DockingCX="1103" DockingCY="101"></Pane-28>
+					<Pane-29 Type="3" TopContaner="30" WindowRectTopPos="486" WindowRectLeftPos="608" WindowRectRightPos="1246" WindowRectBottomPos="691"></Pane-29>
+					<Pane-30 Type="2" Horiz="1" Panes="1" Pane-1="31" DockingCX="200" DockingCY="120"></Pane-30>
+					<Pane-31 Type="1" Panes="0" DockingCX="200" DockingCY="120"></Pane-31>
+					<Pane-32 Type="3" TopContaner="33" WindowRectTopPos="560" WindowRectLeftPos="0" WindowRectRightPos="638" WindowRectBottomPos="882"></Pane-32>
+					<Pane-33 Type="2" Horiz="1" Panes="1" Pane-1="34" DockingCX="200" DockingCY="120"></Pane-33>
+					<Pane-34 Type="1" Panes="0" DockingCX="200" DockingCY="120"></Pane-34>
+					<Pane-35 Type="3" TopContaner="36" WindowRectTopPos="560" WindowRectLeftPos="0" WindowRectRightPos="638" WindowRectBottomPos="882"></Pane-35>
+					<Pane-36 Type="2" Horiz="1" Panes="1" Pane-1="37" DockingCX="200" DockingCY="120"></Pane-36>
+					<Pane-37 Type="1" Panes="0" DockingCX="200" DockingCY="120"></Pane-37>
+				</Default>
+			</Dockinglayout>
+			<MainWindow Zoomed="1">
+				<Position x="13" y="326"/>
+				<Size cx="1127" cy="586"/>
+			</MainWindow>
+			<Windows>
+				<MDIState RTOS="0" Trace="0" Source="1" Maximized="1" SFRWindow="0" CoverageWindow="0"/>
+				<Window Id="Source">
+					<WindowState State="Maximized"></WindowState>
+					<Rectangle State="Minimized">
+						<Size cx="160" cy="24"></Size>
+						<Position x="0" y="352"></Position>
+					</Rectangle>
+					<Rectangle State="Normal">
+						<Size cx="896" cy="488"></Size>
+						<Position x="0" y="0"></Position>
+					</Rectangle>
+					<Rectangle State="Maximized">
+						<Size cx="811" cy="518"></Size>
+						<Position x="-4" y="-30"></Position>
+					</Rectangle>
+				</Window>
+				<Window Id="SFRWindow">
+					<WindowState State="Maximized"/>
+					<Rectangle State="Normal">
+						<Size cx="693" cy="339"/>
+						<Position x="22" y="29"/>
+					</Rectangle>
+					<Rectangle State="Maximized">
+						<Size cx="811" cy="518"/>
+						<Position x="-4" y="-30"/>
+					</Rectangle>
+				</Window>
+			</Windows>
+			<CommandBars>
+				<CommandBars>
+					<CommandBar BarID="10066" Class="CScriptToolBar" Flags="63" Style="4194304" Title="Execute Script" MRUWidth="32767">
+						<Controls OriginalControls="1">
+							<Control Id="10065" Type="4" Class="CXTPControlPopup" Caption="Execute script" TooltipText="Execute script file" CommandBarId="16777216" DescriptionText="Execute a HiSCRIPT script file."></Control>
+							<Control Id="40398" Class="CXTPControlButton" Caption="Abort script file execution" TooltipText="Abort script file execution" DescriptionText="Abort script file execution."></Control>
+							<Control Id="10051" Class="CControlScriptButton" BeginGroup="1"></Control>
+							<Control Id="10052" Class="CControlScriptButton"></Control>
+							<Control Id="10053" Class="CControlScriptButton" Style="3" Caption="Flash_Nor" Parameter="C:\\VSS\\Big Piranha\\Introduction Package\\FIRMWARE\\STM32F10xFWLib\\FWLib\\project\\HiTOP\\Project\\Settings\\flash_nor.scr" TooltipText="C:\\VSS\\Big Piranha\\Introduction Package\\FIRMWARE\\STM32F10xFWLib\\FWLib\\project\\HiTOP\\Project\\Settings\\flash_nor.scr"></Control>
+							<Control Id="10054" Class="CControlScriptButton"></Control>
+							<Control Id="10055" Class="CControlScriptButton"></Control>
+							<Control Id="10056" Class="CControlScriptButton"></Control>
+							<Control Id="10057" Class="CControlScriptButton"></Control>
+							<Control Id="10058" Class="CControlScriptButton"></Control>
+							<Control Id="10059" Class="CControlScriptButton"></Control>
+							<Control Id="10060" Class="CControlScriptButton"></Control>
+							<OriginalControls>
+								<Control Id="10065" Type="4" Class="CXTPControlPopup" Caption="Execute script" TooltipText="Execute script file" CommandBarId="16777217" DescriptionText="Execute a HiSCRIPT script file."></Control>
+								<Control Id="40398" Class="CXTPControlButton" Caption="Abort script file execution" TooltipText="Abort script file execution" DescriptionText="Abort script file execution."></Control>
+								<Control Id="10051" Class="CControlScriptButton" BeginGroup="1"></Control>
+								<Control Id="10052" Class="CControlScriptButton"></Control>
+								<Control Id="10053" Class="CControlScriptButton"></Control>
+								<Control Id="10054" Class="CControlScriptButton"></Control>
+								<Control Id="10055" Class="CControlScriptButton"></Control>
+								<Control Id="10056" Class="CControlScriptButton"></Control>
+								<Control Id="10057" Class="CControlScriptButton"></Control>
+								<Control Id="10058" Class="CControlScriptButton"></Control>
+								<Control Id="10059" Class="CControlScriptButton"></Control>
+								<Control Id="10060" Class="CControlScriptButton"></Control>
+							</OriginalControls>
+						</Controls>
+					</CommandBar>
+					<CommandBar Type="2" BarID="16777216" Class="CXTPPopupBar" Style="4194304" Position="5">
+						<Controls>
+							<Control Id="40399" Class="CControlExecScript" Caption="[Exec]" TooltipText="Execute script file" DescriptionText="Execute a HiSCRIPT script file."></Control>
+						</Controls>
+					</CommandBar>
+					<CommandBar Type="2" BarID="16777217" Class="CXTPPopupBar" Style="4194304" Position="5">
+						<Controls>
+							<Control Id="40399" Class="CControlExecScript" Caption="[Exec]" TooltipText="Execute script file" DescriptionText="Execute a HiSCRIPT script file."></Control>
+						</Controls>
+					</CommandBar>
+				</CommandBars>
+				<Layout>
+					<DockState Count="6" Version="32" ScreenSize="1280, 1024">
+						<BarInfo0 BarId="1" MRUWidth="32767" MRUDockPos="0, 3, 1280, 26"></BarInfo0>
+						<BarInfo1 BarId="10066" MRUWidth="32767" PointPos="333, 49" MRUDockPos="318, 54, 634, 81"></BarInfo1>
+						<BarInfo2 BarId="9025" MRUWidth="32767" PointPos="372, 23" MRUDockPos="522, 21, 758, 48"></BarInfo2>
+						<BarInfo3 BarId="9017" MRUWidth="32767" PointPos="600, 23" MRUDockPos="600, 18, 761, 45"></BarInfo3>
+						<BarInfo4 BarId="4004" MRUWidth="32767" PointPos="0, 49" MRUDockPos="-4, 57, 319, 84"></BarInfo4>
+						<BarInfo5 BarId="1053" MRUWidth="32767" PointPos="0, 75" MRUDockPos="-1, 32, 432, 58"></BarInfo5>
+					</DockState>
+					<DockBars>
+						<DockBar0 Id1="1" Id3="9017" Id4="9025" Id6="10066" Id7="4004" Id9="1053" Count="11"></DockBar0>
+					</DockBars>
+				</Layout>
+			</CommandBars>
+		</Layout>
+	</ScreenLayouts>
+	<HitopObjects>
+		<Watches>
+			<Watch Id="O3" Expr="FLASH_ID "/>
+			<Watch Id="O4" Expr="TransferStatus "/>
+			<Watch Id="O5" Expr="WriteReadStatus"/>
+			<Watch Id="O1" Expr="TransferStatus1"/>
+			<Watch Id="O2" Expr="TransferStatus2"/>
+			<Watch Id="O7" Expr="RxBuffer"/>
+			<Watch Id="O8" Expr="NOR_ID"/>
+			<Watch Id="O9" Expr="Delay"/>
+			<Watch Id="O10" Expr="TimingDelay"/>
+			<Watch Id="O11" Expr="TimingDelay"/>
+			<Watch Id="O12" Expr="SPI2_Buffer_Rx"/>
+			<Watch Id="O13" Expr="TransferStatus"/>
+			<Watch Id="O6" Expr="TimingDelay"/>
+		</Watches>
+		<Breakpoints>
+			<Breakpoint Id="B14" Cond="" Expr="#main#81" Type="EXEC" AddrEnd="" AddrLen="1" Creator="Automatic" Enabled="1" HexAddr="0x08000290" UsesTrigger="0"/>
+			<Breakpoint Id="B16" Cond="" Expr="#main#221" Type="EXEC" AddrEnd="" AddrLen="1" Creator="Automatic" Enabled="1" HexAddr="0x080003F8" UsesTrigger="0"/>
+			<Breakpoint Id="B17" Cond="" Expr="#stm32f10x_nvic#147" Type="EXEC" AddrEnd="" AddrLen="1" Creator="Automatic" Enabled="1" HexAddr="0x08000806" UsesTrigger="0"/>
+			<Breakpoint Id="B6" Cond="" Expr="#main#88" Type="EXEC" AddrEnd="" AddrLen="1" Creator="Automatic" Enabled="1" HexAddr="0x080004B0" UsesTrigger="0"/>
+			<Breakpoint Id="B7" Cond="" Expr="#main#95" Type="EXEC" AddrEnd="" AddrLen="1" Creator="Automatic" Enabled="1" HexAddr="0x08000256" UsesTrigger="0"/>
+		</Breakpoints>
+		<MiniSequences/>
+		<TimerTriggers/>
+	</HitopObjects>
+	<DownloadOptions Verify="0"/>
+	<History Id="HISCRIPT_COMMAND" Count="4" Capacity="10">
+		<HistoryElement Order="3">MONITOR VIEW</HistoryElement>
+		<HistoryElement Order="2"/>
+		<HistoryElement Order="1">evaluate main</HistoryElement>
+		<HistoryElement Order="0">evaluate 0x800023a</HistoryElement>
+	</History>
+	<ExceptionAssistant>
+		<Exceptions Id="ARM low vectors" Count="7">
+			<Exception Name="Reset" Number="0"/>
+			<Exception Name="Undefined Instruction" Number="1"/>
+			<Exception Name="SWI" Number="2"/>
+			<Exception Name="Prefetch Abort" Number="3"/>
+			<Exception Name="Data abort" Number="4"/>
+			<Exception Name="IRQ" Number="5"/>
+			<Exception Name="FIQ" Number="6"/>
+		</Exceptions>
+		<Interrupts Id="STR9 2x ARM - PL190" Count="64" VectorCount="32">
+			<IRQ Name="Watchdog" Number="0"/>
+			<IRQ Name="Software interrupt" Number="1"/>
+			<IRQ Name="Debug Receive Command" Number="2"/>
+			<IRQ Name="Debug Transmit Command" Number="3"/>
+			<IRQ Name="Timer 0" Number="4"/>
+			<IRQ Name="Timer 1" Number="5"/>
+			<IRQ Name="Timer 2" Number="6"/>
+			<IRQ Name="Timer 3" Number="7"/>
+			<IRQ Name="USB" Number="8"/>
+			<IRQ Name="USB" Number="9"/>
+			<IRQ Name="SCU" Number="10"/>
+			<IRQ Name="Ethernet MAC" Number="11"/>
+			<IRQ Name="DMA" Number="12"/>
+			<IRQ Name="CAN" Number="13"/>
+			<IRQ Name="IMC" Number="14"/>
+			<IRQ Name="ADC" Number="15"/>
+			<IRQ Name="UART 0" Number="16"/>
+			<IRQ Name="UART 1" Number="17"/>
+			<IRQ Name="UART 2" Number="18"/>
+			<IRQ Name="I2 C0" Number="19"/>
+			<IRQ Name="I2 C1" Number="20"/>
+			<IRQ Name="SSP 0" Number="21"/>
+			<IRQ Name="SSP 1" Number="22"/>
+			<IRQ Name="SCU" Number="23"/>
+			<IRQ Name="RTC" Number="24"/>
+			<IRQ Name="WIU all" Number="25"/>
+			<IRQ Name="WIU Group 0" Number="26"/>
+			<IRQ Name="WIU Group 1" Number="27"/>
+			<IRQ Name="WIU Group 2" Number="28"/>
+			<IRQ Name="WIU Group 3" Number="29"/>
+			<IRQ Name="USB" Number="30"/>
+			<IRQ Name="PFW-BC" Number="31"/>
+			<IRQ Name="IRQ 32" Number="32"/>
+			<IRQ Name="IRQ 33" Number="33"/>
+			<IRQ Name="IRQ 34" Number="34"/>
+			<IRQ Name="IRQ 35" Number="35"/>
+			<IRQ Name="IRQ 36" Number="36"/>
+			<IRQ Name="IRQ 37" Number="37"/>
+			<IRQ Name="IRQ 38" Number="38"/>
+			<IRQ Name="IRQ 39" Number="39"/>
+			<IRQ Name="IRQ 40" Number="40"/>
+			<IRQ Name="IRQ 41" Number="41"/>
+			<IRQ Name="IRQ 42" Number="42"/>
+			<IRQ Name="IRQ 43" Number="43"/>
+			<IRQ Name="IRQ 44" Number="44"/>
+			<IRQ Name="IRQ 45" Number="45"/>
+			<IRQ Name="IRQ 46" Number="46"/>
+			<IRQ Name="IRQ 47" Number="47"/>
+			<IRQ Name="IRQ 48" Number="48"/>
+			<IRQ Name="IRQ 49" Number="49"/>
+			<IRQ Name="IRQ 50" Number="50"/>
+			<IRQ Name="IRQ 51" Number="51"/>
+			<IRQ Name="IRQ 52" Number="52"/>
+			<IRQ Name="IRQ 53" Number="53"/>
+			<IRQ Name="IRQ 54" Number="54"/>
+			<IRQ Name="IRQ 55" Number="55"/>
+			<IRQ Name="IRQ 56" Number="56"/>
+			<IRQ Name="IRQ 57" Number="57"/>
+			<IRQ Name="IRQ 58" Number="58"/>
+			<IRQ Name="IRQ 59" Number="59"/>
+			<IRQ Name="IRQ 60" Number="60"/>
+			<IRQ Name="IRQ 61" Number="61"/>
+			<IRQ Name="IRQ 62" Number="62"/>
+			<IRQ Name="IRQ 63" Number="63"/>
+		</Interrupts>
+		<Exceptions Id="cortex-M3 vectors" Count="10">
+			<Exception Name="Reset" Number="0"/>
+			<Exception Name="NMI" Number="1"/>
+			<Exception Name="HardFault" Number="2"/>
+			<Exception Name="MemManage" Number="3"/>
+			<Exception Name="BusFault" Number="4"/>
+			<Exception Name="UsageFault" Number="5"/>
+			<Exception Name="SVCall" Number="6"/>
+			<Exception Name="DebugMon" Number="7"/>
+			<Exception Name="PendSV" Number="8"/>
+			<Exception Name="SysTick" Number="9"/>
+		</Exceptions>
+		<Interrupts Id="STM32_NVIC" Count="43" VectorCount="43">
+			<IRQ Name="WWDG" Number="0"/>
+			<IRQ Name="PVD" Number="1"/>
+			<IRQ Name="TAMPER" Number="2"/>
+			<IRQ Name="RTC" Number="3"/>
+			<IRQ Name="FLASH" Number="4"/>
+			<IRQ Name="RCC" Number="5"/>
+			<IRQ Name="EXTI 0" Number="6"/>
+			<IRQ Name="EXTI 1" Number="7"/>
+			<IRQ Name="EXTI 2" Number="8"/>
+			<IRQ Name="EXTI 3" Number="9"/>
+			<IRQ Name="EXTI 4" Number="10"/>
+			<IRQ Name="DMA Channel 1" Number="11"/>
+			<IRQ Name="DMA Channel 2" Number="12"/>
+			<IRQ Name="DMA Channel 3" Number="13"/>
+			<IRQ Name="DMA Channel 4" Number="14"/>
+			<IRQ Name="DMA Channel 5" Number="15"/>
+			<IRQ Name="DMA Channel 6" Number="16"/>
+			<IRQ Name="DMA Channel 7" Number="17"/>
+			<IRQ Name="ADC" Number="18"/>
+			<IRQ Name="USB_HP_CAN_TX" Number="19"/>
+			<IRQ Name="USB_LP_CAN_RX 0" Number="20"/>
+			<IRQ Name="CAN_RX 1" Number="21"/>
+			<IRQ Name="CAN_SCE" Number="22"/>
+			<IRQ Name="EXTI 5-9" Number="23"/>
+			<IRQ Name="TIM 1 BRK" Number="24"/>
+			<IRQ Name="TIM 1 UP" Number="25"/>
+			<IRQ Name="TIM 1 TRG COM" Number="26"/>
+			<IRQ Name="TIM 1 CC" Number="27"/>
+			<IRQ Name="TIM 2" Number="28"/>
+			<IRQ Name="TIM 3" Number="29"/>
+			<IRQ Name="TIM 4" Number="30"/>
+			<IRQ Name="I2C 1 EV" Number="31"/>
+			<IRQ Name="I2C 1 ER" Number="32"/>
+			<IRQ Name="I2C 2 EV" Number="33"/>
+			<IRQ Name="I2C 2 ER" Number="34"/>
+			<IRQ Name="SPI 1" Number="35"/>
+			<IRQ Name="SPI 2" Number="36"/>
+			<IRQ Name="USART 1" Number="37"/>
+			<IRQ Name="USART 2" Number="38"/>
+			<IRQ Name="USART 3" Number="39"/>
+			<IRQ Name="EXTI 10-15" Number="40"/>
+			<IRQ Name="RTC ALARM" Number="41"/>
+			<IRQ Name="USB Wakeup" Number="42"/>
+			<Vector Number="0" Enabled="0"/>
+			<Vector Number="1" Enabled="0"/>
+			<Vector Number="2" Enabled="0"/>
+			<Vector Number="3" Enabled="0"/>
+			<Vector Number="4" Enabled="0"/>
+			<Vector Number="5" Enabled="0"/>
+			<Vector Number="6" Enabled="0"/>
+			<Vector Number="7" Enabled="0"/>
+			<Vector Number="8" Enabled="0"/>
+			<Vector Number="9" Enabled="0"/>
+			<Vector Number="10" Enabled="0"/>
+			<Vector Number="11" Enabled="0"/>
+			<Vector Number="12" Enabled="0"/>
+			<Vector Number="13" Enabled="0"/>
+			<Vector Number="14" Enabled="0"/>
+			<Vector Number="15" Enabled="0"/>
+			<Vector Number="16" Enabled="0"/>
+			<Vector Number="17" Enabled="0"/>
+			<Vector Number="18" Enabled="0"/>
+			<Vector Number="19" Enabled="0"/>
+			<Vector Number="20" Enabled="0"/>
+			<Vector Number="21" Enabled="0"/>
+			<Vector Number="22" Enabled="0"/>
+			<Vector Number="23" Enabled="0"/>
+			<Vector Number="24" Enabled="0"/>
+			<Vector Number="25" Enabled="0"/>
+			<Vector Number="26" Enabled="0"/>
+			<Vector Number="27" Enabled="0"/>
+			<Vector Number="28" Enabled="0"/>
+			<Vector Number="29" Enabled="0"/>
+			<Vector Number="30" Enabled="0"/>
+			<Vector Number="31" Enabled="0"/>
+			<Vector Number="32" Enabled="0"/>
+			<Vector Number="33" Enabled="0"/>
+			<Vector Number="34" Enabled="0"/>
+			<Vector Number="35" Enabled="0"/>
+			<Vector Number="36" Enabled="0"/>
+			<Vector Number="37" Enabled="0"/>
+			<Vector Number="38" Enabled="0"/>
+			<Vector Number="39" Enabled="0"/>
+			<Vector Number="40" Enabled="0"/>
+			<Vector Number="41" Enabled="0"/>
+			<Vector Number="42" Enabled="0"/>
+		</Interrupts>
+	</ExceptionAssistant>
+	<Applications>
+		<AppPath Id="project">C:\VSS\Big Piranha\Introduction Package\FIRMWARE\STM32F10xFWLib\FWLib\project\HiTOP\Project\objects\</AppPath>
+	</Applications>
+	<History Id="SCRIPT_FILES" Count="1" Capacity="5">
+		<HistoryElement Order="0">.\Settings\reset_go_main.scr</HistoryElement>
+	</History>
+	<ApplicationChanged AutoDetect="1"/>
+	<Component Id="GDV" cur_pos="0" buf_size="1000"/>
+	<HiTOPOpen ComponentId="SemiHosting">
+		<Configuration>
+			<General Showed="0"/>
+		</Configuration>
+	</HiTOPOpen>
+	<FlashProgramming RAMBase="0x20000000" RAMLength="0x4000" NumDevices="2" SaveRestoreRAM="0" EnableProgramming="1">
+		<FlashDevice Type="STM32F103xE" Index="0" BusWidth="32" DeviceMode="32" BaseAddress="0x08000000" Manufacturer="ST">
+			<Sectors Count="0"/>
+		</FlashDevice>
+		<FlashDevice Type="M29W128F" Index="1" BusWidth="16" DeviceMode="16" BaseAddress="0x64000000" Manufacturer="ST">
+			<Sectors Count="0"/>
+		</FlashDevice>
+	</FlashProgramming>
+	<LinkerApplications Count="1" RelPath="1" AutoLoad="0" CurrentIdeApp="project" AutoDetectChanges="1">
+		<Loader Id="TaskingCED"/>
+		<Application Pos="0" Load="1" AppName="project" CodeFile=".\objects\project.htx" LinkerFile=".\objects\project.elf" CurrentBuild="DEBUG">
+			<SymbolLoader ProjRel="1" MessageFile="" NeedsSymprepRun="0">
+				<Options Cache="128" Reload="RELOAD" CmdFile="" DestDir=".\objects\" OnlySym="0" StdCode="Intel-Hex" Verbose="1" CtrlFile="" WarnLevel="0">
+					<SourcePath>
+						<Path Text="..\..\"/>
+						<Path Text="..\..\..\library\src\"/>
+						<Path Text="..\..\..\library\inc\"/>
+						<Path Text="..\Source\"/>
+					</SourcePath>
+					<ProcessorSpecific>
+						<Option Text="FW_TYPES"/>
+					</ProcessorSpecific>
+					<DebugModules Include="1"/>
+				</Options>
+			</SymbolLoader>
+			<RTOS Id="" Dll=""/>
+			<BuildConfiguration Id="DEBUG" File="" ToolId="IdeTaskingARM" BuildCfgChanged="false">
+				<FileOptions Id="" File="..\..\library\src\stm32f10x_fsmc.c" ToolId="" FileCfgChanged="false">
+					<General OutputPath="" TargetName=""></General>
+					<Compiler Defines="" Options="-co -CARMv7M -Wc--align-composites=n -Wc-O0 -Wc-c99 -Wc-AGx -Wc-ga -Wc-I&quot;$(TARGETDIR)\..\library\inc&quot; -v -Wa-L1 -Wc-w505 -Wc-w577 -Wc-w560 -k   "></Compiler>
+				</FileOptions>
+				<FileOptions Id="" File="..\..\..\library\src\stm32f10x_fsmc.c" ToolId="" FileCfgChanged="false">
+					<General OutputPath="" TargetName=""></General>
+					<Compiler Defines="" Options="-co -CARMv7M -Wc--align-composites=n -Wc-O1 -Wc-c99 -Wc-AGx -Wc-ga -Wc-I&quot;$(TARGETDIR)\..\library\inc&quot; -v -Wa-L1 -Wc-w505 -Wc-w577 -Wc-w560 -Wc-w557 -Wc-w529  -Wc-t4 -k"></Compiler>
+				</FileOptions>
+				<General OutputPath=".\objects\" TargetName="project.elf">
+					<IncludePath Path="..\..\" Position="0"></IncludePath>
+					<IncludePath Path="..\..\..\library\inc\" Position="1"></IncludePath>
+					<IncludePath Path="..\" Position="2"></IncludePath>
+				</General>
+				<Assembler Options="-co -CARMv7M -Wa-OgsJ -Wa-il -Wa-gs -v "></Assembler>
+				<Compiler Defines="" Options="-co -CARMv7M -Wc--align-composites=n -Wc-O1 -Wc-c99 -Wc-AGx -Wc-ga -Wc-I&quot;$(TARGETDIR)\..\library\inc&quot; -v -Wa-L1 -Wc-t4  -Wc-w557 -Wc-w560  "></Compiler>
+				<Linker File=".\Settings\link.lnk" Options="-Wl-L&quot;$(TOOLDIR)..\lib&quot; -Wl-OcLtXY -CARMv7M   " PostBuild=""></Linker>
+			</BuildConfiguration>
+			<BuildConfiguration Id="test" File="" ToolId="IdeTaskingARM" BuildCfgChanged="false">
+				<FileOptions Id="" File="..\..\library\src\stm32f10x_fsmc.c" ToolId="" FileCfgChanged="false">
+					<General OutputPath="" TargetName=""></General>
+					<Compiler Defines="" Options="-co -CARMv7M -Wc--align-composites=n -Wc-O0 -Wc-c99 -Wc-AGx -Wc-ga -Wc-I&quot;$(TARGETDIR)\..\library\inc&quot; -v -Wa-L1 -Wc-w505 -Wc-w577 -Wc-w560 -k   "></Compiler>
+				</FileOptions>
+				<General OutputPath=".\objects\" TargetName="project.elf">
+					<IncludePath Path="..\" Position="0"></IncludePath>
+					<IncludePath Path="..\..\library\inc\" Position="1"></IncludePath>
+				</General>
+				<Assembler Options="-co -CARMv7M -Wa-OgsJ -Wa-il -Wa-gs -v "></Assembler>
+				<Compiler Defines="" Options="-co -CARMv7M -Wc--align-composites=n -Wc-O0 -Wc-c99 -Wc-AGx -Wc-ga -Wc-I&quot;$(TARGETDIR)\..\library\inc&quot; -v -Wa-L1 -Wc-w505 -Wc-w577 -Wc-w560   "></Compiler>
+				<Linker File=".\Settings\link.lnk" Options="-Wl-L&quot;$(TOOLDIR)..\lib&quot; -Wl-OcLtXY -CARMv7M   " PostBuild=""></Linker>
+			</BuildConfiguration>
+		</Application>
+	</LinkerApplications>
+	<ScriptBarSettings>
+		<ScriptButton Id="1" File="" ButtonText="" ProjRelative="1"/>
+		<ScriptButton Id="2" File="" ButtonText="" ProjRelative="1"/>
+		<ScriptButton Id="3" File=".\Settings\flash_nor.scr" ButtonText="Flash_Nor" ProjRelative="1"/>
+		<ScriptButton Id="4" File="" ButtonText="" ProjRelative="1"/>
+		<ScriptButton Id="5" File="" ButtonText="" ProjRelative="1"/>
+		<ScriptButton Id="6" File="" ButtonText="" ProjRelative="1"/>
+		<ScriptButton Id="7" File="" ButtonText="" ProjRelative="1"/>
+		<ScriptButton Id="8" File="" ButtonText="" ProjRelative="1"/>
+		<ScriptButton Id="9" File="" ButtonText="" ProjRelative="1"/>
+		<ScriptButton Id="10" File="" ButtonText="" ProjRelative="1"/>
+	</ScriptBarSettings>
+</HiTOPProject>
+

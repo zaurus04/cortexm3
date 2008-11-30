@@ -1,0 +1,766 @@
+cfg1_out.c: sample1.cfg ../arch/arm_m_gcc/prc_timer.cfg ../syssvc/banner.cfg ../syssvc/logtask.cfg ../syssvc/serial.cfg ../syssvc/syslog.cfg ../target/cq_starm_gcc/target_serial.cfg ../target/cq_starm_gcc/target_timer.cfg 
+cfg1_out.o: ../kernel/semaphore.h ../arch/arm_m_gcc/prc_cfg1_out.h \
+	../target/cq_starm_gcc/cq_starm.h ../syssvc/banner.cfg \
+	../kernel/dataqueue.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_cfg1_out.h ../include/queue.h \
+	sample1.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../target/cq_starm_gcc/target_timer.h \
+	../arch/gcc/tool_stddef.h \
+	../target/cq_starm_gcc/target_serial.cfg ../kernel/alarm.h \
+	../arch/arm_m_gcc/prc_timer.h ../syssvc/logtask.cfg \
+	../include/t_syslog.h ../arch/arm_m_gcc/prc_unrename.h \
+	../target/cq_starm_gcc/target_unrename.h \
+	../arch/arm_m_gcc/prc_stddef.h ../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_stddef.h ../syssvc/syslog.cfg \
+	../syssvc/banner.h ../kernel/eventflag.h ../kernel/mempfix.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/arm_m_gcc/prc_insn.h \
+	sample1.cfg cfg1_out.c ../arch/arm_m_gcc/prc_timer.cfg \
+	../target/cq_starm_gcc/target_test.h ../syssvc/logtask.h \
+	../syssvc/serial.h ../kernel/kernel_impl.h \
+	../kernel/kernel_int.h \
+	../target/cq_starm_gcc/target_syssvc.h \
+	../target/cq_starm_gcc/target_serial.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../arch/arm_m_gcc/prc_kernel.h ../kernel/time_event.h \
+	../kernel/interrupt.h ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h ../syssvc/syslog.h \
+	../kernel/cyclic.h ../arch/arm_m_gcc/prc_config.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h ../kernel/task.h ../include/kernel.h \
+	../kernel/pridataq.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/exception.h ../kernel/kernel_unrename.h \
+	../syssvc/serial.cfg \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../arch/arm_m_gcc/prc_test.h ../kernel/allfunc.h \
+	../kernel/mailbox.h 
+makeoffset.s: ../arch/arm_m_gcc/makeoffset.c \
+	../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_insn.h ../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../target/cq_starm_gcc/target_sil.h \
+	../kernel/kernel_impl.h ../include/sil.h \
+	../include/t_stddef.h 
+target_support.o: ../target/cq_starm_gcc/cq_starm.h \
+	../include/t_syslog.h ../arch/arm_m_gcc/prc_stddef.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../arch/arm_m_gcc/prc_kernel.h ../arch/arm_m_gcc/arm_m.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_support.S \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_config.h ../kernel/allfunc.h \
+	../kernel/kernel_impl.h ../target/cq_starm_gcc/target_sil.h \
+	../include/sil.h ../include/t_stddef.h 
+prc_support.o: ../target/cq_starm_gcc/cq_starm.h \
+	../arch/arm_m_gcc/prc_support.S ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../arch/arm_m_gcc/prc_kernel.h ../arch/arm_m_gcc/arm_m.h \
+	../kernel/kernel_rename.h ./offset.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_config.h ../kernel/allfunc.h \
+	../kernel/kernel_impl.h ../target/cq_starm_gcc/target_sil.h \
+	../include/sil.h ../include/t_stddef.h 
+target_config.o: ../target/cq_starm_gcc/target_syssvc.h \
+	../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h \
+	../target/cq_starm_gcc/target_serial.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../target/cq_starm_gcc/target_config.c \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_insn.h ../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../target/cq_starm_gcc/target_sil.h \
+	../kernel/kernel_impl.h ../include/sil.h \
+	../include/t_stddef.h 
+prc_timer.o: ../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../target/cq_starm_gcc/target_timer.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/gcc/tool_stddef.h ../arch/arm_m_gcc/prc_rename.h \
+	../arch/arm_m_gcc/prc_timer.c ../arch/arm_m_gcc/prc_insn.h \
+	../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../arch/arm_m_gcc/prc_timer.h ../kernel/allfunc.h \
+	../target/cq_starm_gcc/target_sil.h ../kernel/kernel_impl.h \
+	../include/sil.h ../include/t_stddef.h 
+prc_config.o: ../target/cq_starm_gcc/cq_starm.h \
+	../include/t_syslog.h ../arch/arm_m_gcc/prc_stddef.h \
+	../kernel/task.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h ../kernel/check.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/arm_m_gcc/prc_config.c ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_insn.h ../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../target/cq_starm_gcc/target_sil.h \
+	../kernel/kernel_impl.h ../include/sil.h \
+	../include/t_stddef.h 
+startup.o: ../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h ../kernel/startup.c \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_insn.h ../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../target/cq_starm_gcc/target_sil.h \
+	../kernel/kernel_impl.h ../include/sil.h \
+	../include/t_stddef.h 
+task.o: ../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../kernel/task.c ../target/cq_starm_gcc/target_stddef.h \
+	../kernel/wait.h ../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_insn.h ../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../target/cq_starm_gcc/target_sil.h \
+	../kernel/kernel_impl.h ../include/sil.h \
+	../include/t_stddef.h 
+wait.o: ../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h ../kernel/wait.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_insn.h ../arch/arm_m_gcc/prc_config.h \
+	../kernel/wait.c \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../target/cq_starm_gcc/target_sil.h \
+	../kernel/kernel_impl.h ../include/sil.h \
+	../include/t_stddef.h 
+time_event.o: ../target/cq_starm_gcc/cq_starm.h \
+	../include/t_syslog.h ../arch/arm_m_gcc/prc_stddef.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h ../kernel/check.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_insn.h ../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/time_event.c ../kernel/allfunc.h \
+	../target/cq_starm_gcc/target_sil.h ../kernel/kernel_impl.h \
+	../include/sil.h ../include/t_stddef.h 
+task_manage.o: ../target/cq_starm_gcc/cq_starm.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../kernel/check.h ../kernel/wait.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/task_manage.c ../kernel/time_event.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/gcc/tool_stddef.h ../arch/arm_m_gcc/prc_config.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/arm_m_gcc/arm_m.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/arm_m_gcc/prc_insn.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../kernel/kernel_impl.h 
+task_refer.o: ../kernel/semaphore.h \
+	../target/cq_starm_gcc/cq_starm.h ../kernel/dataqueue.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../kernel/check.h ../kernel/wait.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/gcc/tool_stddef.h ../arch/arm_m_gcc/prc_config.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../kernel/pridataq.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_stddef.h ../kernel/eventflag.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/arm_m_gcc/arm_m.h ../kernel/mempfix.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/arm_m_gcc/prc_insn.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/mailbox.h ../kernel/task_refer.c \
+	../kernel/allfunc.h ../kernel/kernel_impl.h 
+task_sync.o: ../target/cq_starm_gcc/cq_starm.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../kernel/check.h ../kernel/wait.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/gcc/tool_stddef.h ../arch/arm_m_gcc/prc_config.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/arm_m_gcc/arm_m.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/arm_m_gcc/prc_insn.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/task_sync.c \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../kernel/kernel_impl.h 
+task_except.o: ../target/cq_starm_gcc/cq_starm.h \
+	../include/t_syslog.h ../arch/arm_m_gcc/prc_stddef.h \
+	../kernel/task.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h ../kernel/check.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../kernel/task_except.c ../arch/arm_m_gcc/prc_insn.h \
+	../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../target/cq_starm_gcc/target_sil.h \
+	../kernel/kernel_impl.h ../include/sil.h \
+	../include/t_stddef.h 
+semaphore.o: ../kernel/semaphore.h ../target/cq_starm_gcc/cq_starm.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../kernel/check.h ../kernel/wait.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/gcc/tool_stddef.h ../arch/arm_m_gcc/prc_config.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/arm_m_gcc/arm_m.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/arm_m_gcc/prc_insn.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../kernel/kernel_impl.h \
+	../kernel/semaphore.c 
+eventflag.o: ../target/cq_starm_gcc/cq_starm.h ../kernel/eventflag.c \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../kernel/check.h ../kernel/wait.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/gcc/tool_stddef.h ../arch/arm_m_gcc/prc_config.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_stddef.h ../kernel/eventflag.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/arm_m_gcc/arm_m.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/arm_m_gcc/prc_insn.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../kernel/kernel_impl.h 
+dataqueue.o: ../target/cq_starm_gcc/cq_starm.h ../kernel/dataqueue.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../kernel/check.h ../kernel/wait.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/gcc/tool_stddef.h ../arch/arm_m_gcc/prc_config.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/arm_m_gcc/arm_m.h ../kernel/dataqueue.c \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/arm_m_gcc/prc_insn.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../kernel/kernel_impl.h 
+pridataq.o: ../target/cq_starm_gcc/cq_starm.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../kernel/check.h ../kernel/wait.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/gcc/tool_stddef.h ../arch/arm_m_gcc/prc_config.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../kernel/pridataq.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/arm_m_gcc/arm_m.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../kernel/pridataq.c \
+	../arch/arm_m_gcc/prc_insn.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../kernel/kernel_impl.h 
+mailbox.o: ../kernel/mailbox.c ../target/cq_starm_gcc/cq_starm.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../kernel/check.h ../kernel/wait.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/gcc/tool_stddef.h ../arch/arm_m_gcc/prc_config.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/arm_m_gcc/arm_m.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/arm_m_gcc/prc_insn.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/mailbox.h ../kernel/allfunc.h \
+	../kernel/kernel_impl.h 
+mempfix.o: ../target/cq_starm_gcc/cq_starm.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../kernel/check.h ../kernel/wait.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/gcc/tool_stddef.h ../arch/arm_m_gcc/prc_config.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h ../kernel/mempfix.c \
+	../include/t_syslog.h ../arch/arm_m_gcc/prc_stddef.h \
+	../kernel/task.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/arm_m_gcc/arm_m.h ../kernel/mempfix.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/arm_m_gcc/prc_insn.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../kernel/kernel_impl.h 
+time_manage.o: ../target/cq_starm_gcc/cq_starm.h \
+	../include/t_syslog.h ../arch/arm_m_gcc/prc_stddef.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h ../kernel/check.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/time_manage.c \
+	../target/cq_starm_gcc/target_timer.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_insn.h ../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../arch/arm_m_gcc/prc_timer.h ../kernel/allfunc.h \
+	../target/cq_starm_gcc/target_sil.h ../kernel/kernel_impl.h \
+	../include/sil.h ../include/t_stddef.h 
+cyclic.o: ../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h ../kernel/check.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/cyclic.c ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../kernel/cyclic.h ../arch/arm_m_gcc/prc_insn.h \
+	../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../target/cq_starm_gcc/target_sil.h \
+	../kernel/kernel_impl.h ../include/sil.h \
+	../include/t_stddef.h 
+alarm.o: ../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h ../kernel/check.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_insn.h ../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/alarm.h ../kernel/alarm.c \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../target/cq_starm_gcc/target_sil.h \
+	../kernel/kernel_impl.h ../include/sil.h \
+	../include/t_stddef.h 
+sys_manage.o: ../target/cq_starm_gcc/cq_starm.h \
+	../include/t_syslog.h ../arch/arm_m_gcc/prc_stddef.h \
+	../kernel/task.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h ../kernel/check.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_insn.h ../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../target/cq_starm_gcc/target_sil.h \
+	../kernel/kernel_impl.h ../kernel/sys_manage.c \
+	../include/sil.h ../include/t_stddef.h 
+interrupt.o: ../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h ../kernel/check.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/interrupt.h ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../kernel/interrupt.c ../arch/arm_m_gcc/prc_insn.h \
+	../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/allfunc.h ../target/cq_starm_gcc/target_sil.h \
+	../kernel/kernel_impl.h ../include/sil.h \
+	../include/t_stddef.h 
+exception.o: ../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../include/kernel.h ../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../kernel/exception.h ../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_insn.h ../arch/arm_m_gcc/prc_config.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/exception.c ../kernel/allfunc.h \
+	../target/cq_starm_gcc/target_sil.h ../kernel/kernel_impl.h \
+	../include/sil.h ../include/t_stddef.h 
+sample1.o: ../include/t_syslog.h ../arch/arm_m_gcc/prc_stddef.h \
+	../include/kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h sample1.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	kernel_cfg.h sample1.c ../arch/gcc/tool_stddef.h \
+	../syssvc/syslog.h ../include/t_stdlib.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../arch/arm_m_gcc/prc_test.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../target/cq_starm_gcc/target_test.h ../syssvc/serial.h \
+	../include/t_stddef.h 
+target_serial.o: ../target/cq_starm_gcc/target_syssvc.h \
+	../target/cq_starm_gcc/cq_starm.h \
+	../arch/arm_m_gcc/prc_stddef.h \
+	../target/cq_starm_gcc/target_serial.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../target/cq_starm_gcc/target_serial.c \
+	../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h 
+banner.o: ../target/cq_starm_gcc/target_syssvc.h ../syssvc/banner.c \
+	../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h 
+syslog.o: ../target/cq_starm_gcc/target_syssvc.h \
+	../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/gcc/tool_stddef.h ../syssvc/syslog.h \
+	../syssvc/syslog.c \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/log_output.h ../include/t_stddef.h 
+serial.o: ../target/cq_starm_gcc/target_syssvc.h \
+	../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h \
+	../target/cq_starm_gcc/target_serial.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../arch/arm_m_gcc/prc_kernel.h ../syssvc/serial.c \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/gcc/tool_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	./kernel_cfg.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../syssvc/serial.h ../target/cq_starm_gcc/target_sil.h \
+	../include/sil.h ../include/t_stddef.h 
+logtask.o: ../target/cq_starm_gcc/target_syssvc.h \
+	../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../arch/arm_m_gcc/prc_kernel.h ../syssvc/logtask.c \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../arch/arm_m_gcc/arm_m.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/gcc/tool_stddef.h ../syssvc/syslog.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../syssvc/logtask.h ../target/cq_starm_gcc/target_sil.h \
+	../syssvc/serial.h ../include/sil.h ../include/log_output.h \
+	../include/t_stddef.h 
+log_output.o: ../arch/gcc/tool_stddef.h ../library/log_output.c \
+	../include/t_syslog.h ../arch/arm_m_gcc/prc_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/t_stddef.h 
+vasyslog.o: ../arch/gcc/tool_stddef.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stdarg.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../syssvc/vasyslog.c \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/t_stddef.h 
+t_perror.o: ../arch/gcc/tool_stddef.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../include/t_stdlib.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../target/cq_starm_gcc/target_stddef.h ../library/t_perror.c \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/t_stddef.h 
+strerror.o: ../arch/gcc/tool_stddef.h ../arch/arm_m_gcc/prc_stddef.h \
+	../library/strerror.c ../include/t_stdlib.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/t_stddef.h 
+kernel_cfg.o: ../target/cq_starm_gcc/target_syssvc.h \
+	../kernel/semaphore.h ../target/cq_starm_gcc/cq_starm.h \
+	../kernel/dataqueue.h ../target/cq_starm_gcc/target_serial.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/queue.h ../target/cq_starm_gcc/target_kernel.h \
+	kernel_cfg.c sample1.h ../arch/arm_m_gcc/prc_kernel.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../target/cq_starm_gcc/target_timer.h \
+	../kernel/interrupt.h ../kernel/kernel_rename.h kernel_cfg.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/gcc/tool_stddef.h ../syssvc/syslog.h \
+	../kernel/cyclic.h ../arch/arm_m_gcc/prc_config.h \
+	../kernel/alarm.h ../arch/arm_m_gcc/prc_timer.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_unrename.h \
+	../target/cq_starm_gcc/target_unrename.h \
+	../arch/arm_m_gcc/prc_stddef.h ../kernel/task.h \
+	../kernel/pridataq.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_stddef.h ../syssvc/banner.h \
+	../kernel/eventflag.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../arch/arm_m_gcc/arm_m.h ../kernel/exception.h \
+	../kernel/mempfix.h ../kernel/kernel_unrename.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/arm_m_gcc/prc_insn.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../arch/arm_m_gcc/prc_test.h \
+	/cygdrive/c\\cygwin\\usr\\local\\arm\\bin\\../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../target/cq_starm_gcc/target_test.h ../syssvc/logtask.h \
+	../kernel/mailbox.h ../kernel/allfunc.h ../syssvc/serial.h \
+	../kernel/kernel_impl.h ../kernel/kernel_int.h 
+start.o: ../target/cq_starm_gcc/cq_starm.h ../include/t_syslog.h \
+	../arch/arm_m_gcc/prc_stddef.h ../include/kernel.h \
+	../arch/arm_m_gcc/prc_sil.h \
+	../target/cq_starm_gcc/target_kernel.h \
+	../target/cq_starm_gcc/target_stddef.h \
+	../arch/arm_m_gcc/prc_kernel.h ../arch/arm_m_gcc/arm_m.h \
+	../kernel/kernel_rename.h \
+	../target/cq_starm_gcc/target_rename.h \
+	../target/cq_starm_gcc/target_config.h \
+	../arch/arm_m_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/arm_m_gcc/prc_config.h ../kernel/allfunc.h \
+	../arch/arm_m_gcc/start.S ../kernel/kernel_impl.h \
+	../target/cq_starm_gcc/target_sil.h ../include/sil.h \
+	../include/t_stddef.h 

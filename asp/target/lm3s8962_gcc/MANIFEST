@@ -1,0 +1,27 @@
+PACKAGE asp_arch_arm_m_gcc
+
+MANIFEST
+Makefile.target
+lm3s8962.h
+lm3s8962_ram.ld
+lm3s8962_rom.ld
+target.tf
+target_cfg1_out.h
+target_check.tf
+target_config.c
+target_config.h
+target_def.csv
+target_kernel.h
+target_rename.def
+target_rename.h
+target_serial.c
+target_serial.cfg
+target_serial.h
+target_sil.h
+target_stddef.h
+target_syssvc.h
+target_test.h
+target_timer.cfg
+target_timer.h
+target_unrename.h
+target_user.txt

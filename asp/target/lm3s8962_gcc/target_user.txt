@@ -1,0 +1,86 @@
+=====================================================================
+                              LM3S8962依存部
+                                  Last Modified: 27 Aug 2008 17:56:46
+=====================================================================
+
+(1) 対応しているターゲットシステムの種類・構成
+
+LM3S8962依存部は，LUMINARY MICRO社のLM3S8962をサポートしている．使用し
+ているリソースはSYSTICとUART0だけであるので，LUMINARY MICRO社の他のチ
+ップでも容易に動作する．チップ初期化やUARTに関するデバイスドライバは
+LUMINARY MICRO社 から提供されている，"Stellaris Peripheral Driver 
+Libary"を用いる．
+
+(2) 使用する開発環境と動作検証した条件（バージョン，オプション等）
+
+コンパイラはGCCを用いる動作確認に用いたコンパイラは以下の通りである．
+
+  gcc version 4.2.3 (Sourcery G++ Lite 2008q1-126)
+
+デバッグ環境は，LM3S8962を搭載したLUMINARY MICRO社の評価ボード 
+LM3S8962 Ethernet+CAN Evaluation Kits のデバッグモジュール経由でのフラ
+ッシュメモリへの書き込みとデバッグを確認した．
+
+(3) ターゲット定義事項の規定
+
+(3-1) 割込み優先度
+
+割込み優先度として指定可能な範囲は，-7 〜 -1 である．TMIN_INTPRIに-7よ
+り小さな値を設定することにより，カーネル管理外の割込みをサポートする．
+
+(4) メモリマップ
+
+プログラムはFLASHへデータはRAMへ配置する．配置を変更するには，
+lm3s8962_rom.ld を変更すること．
+
+(5) シリアルインタフェースドライバの情報
+
+シリアルインタフェースドライバでは，UART0を用いる．通信フォーマットは，
+115200bps, 8bit, non-parity, 1topbitである．
+
+(6) システムログ機能の情報
+
+システムログの低レベル出力は，UART0を用いる．通信フォーマットは，
+115200bps, 8bit, non-parity, 1topbitである．
+
+(7) ライブラリの指定
+
+"Stellaris Peripheral Driver Libary" に含まれる，libdriver.a と 
+libgr.a をリンク対象とする必要がある．指定方法は，Makefile.target の 
+LIBS に指定すればよい．
+
+(8) ディレクトリ構成・ファイル構成
+
+ ./lm3s8962_gcc 
+   ./Makefile.target
+   ./lm3s8962.h
+   ./lm3s8962_ram.ld
+   ./lm3s8962_rom.ld
+   ./target.tf
+   ./target_cfg1_out.h
+   ./target_check.tf
+   ./target_config.c
+   ./target_config.h
+   ./target_def.csv
+   ./target_kernel.h
+   ./target_rename.def
+   ./target_rename.h
+   ./target_serial.c
+   ./target_serial.cfg
+   ./target_serial.h
+   ./target_sil.h
+   ./target_stddef.h
+   ./target_syssvc.h
+   ./target_test.h
+   ./target_timer.cfg
+   ./target_timer.h
+   ./target_unrename.h
+   ./target_user.txt
+
+(9) バージョン履歴
+
+2008/08/27
+ ・ライブラリのリンク方法を明記．
+
+2008/07/11
+ ・最初のリリース

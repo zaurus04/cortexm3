@@ -1,0 +1,5 @@
+E_PACKAGE asp_cq_starm_gcc
+VERSION %date
+
+INCLUDE ../../MANIFEST
+INCLUDE ../../arch/arm_m_gcc/MANIFEST

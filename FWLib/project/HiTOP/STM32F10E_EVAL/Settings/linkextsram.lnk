@@ -1,0 +1,5 @@
+-d"./Settings/STM32F10xextsram.lsl"
+--optimize=0
+--map-file-format=2
+$(LinkObjects)
+--output=.\Objects\$(Target)

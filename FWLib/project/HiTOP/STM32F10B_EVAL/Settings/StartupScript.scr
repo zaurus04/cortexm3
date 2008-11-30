@@ -1,0 +1,8 @@
+// Hitex/lue/2007-07-18
+// startup script STM32
+
+// set program counter to applications start address
+RESET TARGET
+
+
+

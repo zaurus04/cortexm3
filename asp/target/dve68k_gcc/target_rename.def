@@ -1,0 +1,11 @@
+# target_config.c
+board_id
+board_addr
+bitpat_cfgint
+x_config_int
+
+# prc_config.c, prc_support.S
+prc_initialize
+prc_terminate
+
+INCLUDE "m68k_gcc/prc"

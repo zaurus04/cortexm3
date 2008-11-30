@@ -1,0 +1,706 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x8003000
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          187172 (bytes into file)
+  Flags:                             0x5000002, has entry point, Version5 EABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         2
+  Size of section headers:           40 (bytes)
+  Number of section headers:         18
+  Section header string table index: 15
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        08003000 003000 0051dc 00  AX  0   0  4
+  [ 2] .rodata           PROGBITS        080081dc 0081dc 000f64 00   A  0   0  4
+  [ 3] .bss              NOBITS          20000000 010000 001e44 00  WA  0   0  8
+  [ 4] .ARM.attributes   ARM_ATTRIBUTES  00000000 009140 00002f 00      0   0  1
+  [ 5] .debug_line       PROGBITS        00000000 00916f 0041aa 00      0   0  1
+  [ 6] .debug_info       PROGBITS        00000000 00d319 010440 00      0   0  1
+  [ 7] .debug_abbrev     PROGBITS        00000000 01d759 003c3b 00      0   0  1
+  [ 8] .debug_aranges    PROGBITS        00000000 021398 0003c0 00      0   0  8
+  [ 9] .debug_frame      PROGBITS        00000000 021758 001218 00      0   0  4
+  [10] .debug_loc        PROGBITS        00000000 022970 0068d4 00      0   0  1
+  [11] .debug_pubnames   PROGBITS        00000000 029244 001236 00      0   0  1
+  [12] .debug_ranges     PROGBITS        00000000 02a47a 0010b0 00      0   0  1
+  [13] .debug_str        PROGBITS        00000000 02b52a 002088 01  MS  0   0  1
+  [14] .comment          PROGBITS        00000000 02d5b2 0004b4 00      0   0  1
+  [15] .shstrtab         STRTAB          00000000 02da66 0000bd 00      0   0  1
+  [16] .symtab           SYMTAB          00000000 02ddf4 002710 10     17 387  4
+  [17] .strtab           STRTAB          00000000 030504 00125f 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x000000 0x08000000 0x08000000 0x09140 0x09140 R E 0x8000
+  LOAD           0x010000 0x20000000 0x08009140 0x00000 0x01e44 RW  0x8000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text .rodata 
+   01     .bss 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+There are no unwind sections in this file.
+
+Symbol table '.symtab' contains 625 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 08003000     0 SECTION LOCAL  DEFAULT    1 
+     2: 080081dc     0 SECTION LOCAL  DEFAULT    2 
+     3: 20000000     0 SECTION LOCAL  DEFAULT    3 
+     4: 00000000     0 SECTION LOCAL  DEFAULT    4 
+     5: 00000000     0 SECTION LOCAL  DEFAULT    5 
+     6: 00000000     0 SECTION LOCAL  DEFAULT    6 
+     7: 00000000     0 SECTION LOCAL  DEFAULT    7 
+     8: 00000000     0 SECTION LOCAL  DEFAULT    8 
+     9: 00000000     0 SECTION LOCAL  DEFAULT    9 
+    10: 00000000     0 SECTION LOCAL  DEFAULT   10 
+    11: 00000000     0 SECTION LOCAL  DEFAULT   11 
+    12: 00000000     0 SECTION LOCAL  DEFAULT   12 
+    13: 00000000     0 SECTION LOCAL  DEFAULT   13 
+    14: 00000000     0 SECTION LOCAL  DEFAULT   14 
+    15: 00000000     0 FILE    LOCAL  DEFAULT  ABS kernel_cfg.c
+    16: 08004dec     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    17: 080083a4     0 NOTYPE  LOCAL  DEFAULT    2 $d
+    18: 20000658  1024 OBJECT  LOCAL  DEFAULT    3 _kernel_stack_LOGTASK
+    19: 20000a58  1024 OBJECT  LOCAL  DEFAULT    3 _kernel_stack_TASK1
+    20: 20000e58  1024 OBJECT  LOCAL  DEFAULT    3 _kernel_stack_TASK2
+    21: 20001258  1024 OBJECT  LOCAL  DEFAULT    3 _kernel_stack_TASK3
+    22: 20001658  1024 OBJECT  LOCAL  DEFAULT    3 _kernel_stack_MAIN_TASK
+    23: 20001a58   512 OBJECT  LOCAL  DEFAULT    3 _kernel_istack
+    24: 08003000     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    25: 0000202c     0 NOTYPE  LOCAL  DEFAULT   10 $d
+    26: 080030ec     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    27: 080030f4     0 NOTYPE  LOCAL  DEFAULT    1 start_1
+    28: 0800310a     0 NOTYPE  LOCAL  DEFAULT    1 start_3
+    29: 08003100     0 NOTYPE  LOCAL  DEFAULT    1 start_2
+    30: 08003124     0 NOTYPE  LOCAL  DEFAULT    1 start_5
+    31: 08003114     0 NOTYPE  LOCAL  DEFAULT    1 start_4
+    32: 0800312a     0 NOTYPE  LOCAL  DEFAULT    1 start_6
+    33: 0800312e     0 NOTYPE  LOCAL  DEFAULT    1 l_end
+    34: 08003130     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    35: 00000000     0 FILE    LOCAL  DEFAULT  ABS sample1.c
+    36: 0800314c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    37: 080031b0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    38: 080031c0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    39: 08003224     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    40: 08003234     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    41: 080032b0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    42: 08003350     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    43: 080034ac     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    44: 08003500     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    45: 080035f8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    46: 0800368c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    47: 080037ac     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    48: 080037e4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    49: 08003ac4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    50: 08003b44     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    51: 08003ce0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    52: 08003d34     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    53: 08003e20     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    54: 08003e4c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    55: 08003ec4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    56: 080081dc    12 OBJECT  LOCAL  DEFAULT    2 C.0.2211
+    57: 080081dc     0 NOTYPE  LOCAL  DEFAULT    2 $d
+    58: 00000000     0 NOTYPE  LOCAL  DEFAULT    9 $d
+    59: 00000000     0 FILE    LOCAL  DEFAULT  ABS target_serial.c
+    60: 08003edc     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    61: 08003f20     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    62: 08003f24     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    63: 08003f7c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    64: 08003f80     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    65: 08003fb4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    66: 08003fb8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    67: 08004028     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    68: 0800402c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    69: 080081e8     4 OBJECT  LOCAL  DEFAULT    2 sioreg_table
+    70: 080081e8     0 NOTYPE  LOCAL  DEFAULT    2 $d
+    71: 00000bf5     0 NOTYPE  LOCAL  DEFAULT   10 $d
+    72: 00000000     0 FILE    LOCAL  DEFAULT  ABS banner.c
+    73: 08004044     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    74: 080081ec   361 OBJECT  LOCAL  DEFAULT    2 banner
+    75: 000001a8     0 NOTYPE  LOCAL  DEFAULT    9 $d
+    76: 00000eb3     0 NOTYPE  LOCAL  DEFAULT   10 $d
+    77: 00000000     0 FILE    LOCAL  DEFAULT  ABS syslog.c
+    78: 0800406c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    79: 08004140     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    80: 0800414c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    81: 08004184     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    82: 08004188     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    83: 080041ec     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    84: 20000000     4 OBJECT  LOCAL  DEFAULT    3 syslog_count
+    85: 20000004     4 OBJECT  LOCAL  DEFAULT    3 syslog_tail
+    86: 20000008     4 OBJECT  LOCAL  DEFAULT    3 syslog_head
+    87: 2000000c     4 OBJECT  LOCAL  DEFAULT    3 syslog_lost
+    88: 20000010     4 OBJECT  LOCAL  DEFAULT    3 syslog_logmask
+    89: 20000014     4 OBJECT  LOCAL  DEFAULT    3 syslog_lowmask
+    90: 20000018  1024 OBJECT  LOCAL  DEFAULT    3 syslog_buffer
+    91: 00000000     0 FILE    LOCAL  DEFAULT  ABS serial.c
+    92: 080041f0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    93: 080041f1    10 FUNC    LOCAL  DEFAULT    1 gen_ercd_sys
+    94: 080041fd    24 FUNC    LOCAL  DEFAULT    1 gen_ercd_wait
+    95: 08004270     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    96: 08004274     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    97: 0800431c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    98: 08004320     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    99: 08004358     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   100: 0800435c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   101: 080043f0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   102: 080043f4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   103: 08004488     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   104: 0800448c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   105: 0800448d   160 FUNC    LOCAL  DEFAULT    1 serial_wri_chr
+   106: 08004660     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   107: 08004664     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   108: 080046f0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   109: 080046f4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   110: 08008358    24 OBJECT  LOCAL  DEFAULT    2 spinib_table
+   111: 08008358     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   112: 20000450   256 OBJECT  LOCAL  DEFAULT    3 rcv_buffer1
+   113: 20000550   256 OBJECT  LOCAL  DEFAULT    3 snd_buffer1
+   114: 20000418    56 OBJECT  LOCAL  DEFAULT    3 spcb_table
+   115: 00001022     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   116: 00000000     0 FILE    LOCAL  DEFAULT  ABS logtask.c
+   117: 08004814     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   118: 08004884     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   119: 08004890     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   120: 08004891    30 FUNC    LOCAL  DEFAULT    1 logtask_putc
+   121: 0800492c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   122: 08004938     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   123: 08004994     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   124: 20000650     0 NOTYPE  LOCAL  DEFAULT    3 $d
+   125: 20000650     4 OBJECT  LOCAL  DEFAULT    3 logtask_portid
+   126: 00000000     0 FILE    LOCAL  DEFAULT  ABS log_output.c
+   127: 08004998     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   128: 08004999   172 FUNC    LOCAL  DEFAULT    1 convert
+   129: 08004b78     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   130: 08004b84     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   131: 08004bb0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   132: 08004bb4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   133: 08008370    11 OBJECT  LOCAL  DEFAULT    2 raddec
+   134: 0800837c    17 OBJECT  LOCAL  DEFAULT    2 radhex
+   135: 08008390    17 OBJECT  LOCAL  DEFAULT    2 radHEX
+   136: 0000043c     0 NOTYPE  LOCAL  DEFAULT    9 $d
+   137: 00001a7a     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   138: 00000000     0 FILE    LOCAL  DEFAULT  ABS vasyslog.c
+   139: 08004bd8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   140: 000004c8     0 NOTYPE  LOCAL  DEFAULT    9 $d
+   141: 00001e4b     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   142: 00000000     0 FILE    LOCAL  DEFAULT  ABS t_perror.c
+   143: 08004ca8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   144: 000004fc     0 NOTYPE  LOCAL  DEFAULT    9 $d
+   145: 00001f75     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   146: 00000000     0 FILE    LOCAL  DEFAULT  ABS strerror.c
+   147: 08004cec     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   148: 08004cf8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   149: 08004d34     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   150: 08004d90     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   151: 00000530     0 NOTYPE  LOCAL  DEFAULT    9 $d
+   152: 08004e48     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   153: 08004e5f     0 FUNC    LOCAL  DEFAULT    1 dispatch_r
+   154: 08004fb4     0 NOTYPE  LOCAL  DEFAULT    1 dispatcher
+   155: 08004e72     0 NOTYPE  LOCAL  DEFAULT    1 dispatch_r_1
+   156: 08004e92     0 NOTYPE  LOCAL  DEFAULT    1 exc_entry_1
+   157: 08004e98     0 NOTYPE  LOCAL  DEFAULT    1 exc_entry_2
+   158: 08004ed8     0 NOTYPE  LOCAL  DEFAULT    1 _kernel_ret_exc
+   159: 08004ec6     0 NOTYPE  LOCAL  DEFAULT    1 int_entry_1
+   160: 08004ecc     0 NOTYPE  LOCAL  DEFAULT    1 int_entry_2
+   161: 08004ed8     0 NOTYPE  LOCAL  DEFAULT    1 _kernel_ret_int
+   162: 08004ee6     0 NOTYPE  LOCAL  DEFAULT    1 ret_int_1
+   163: 08004f02     0 NOTYPE  LOCAL  DEFAULT    1 ret_int_2
+   164: 08004f08     0 NOTYPE  LOCAL  DEFAULT    1 ret_int_3
+   165: 08004f38     0 NOTYPE  LOCAL  DEFAULT    1 ret_int_4
+   166: 08004f60     0 NOTYPE  LOCAL  DEFAULT    1 ret_int_r_1
+   167: 08004f5d     0 FUNC    LOCAL  DEFAULT    1 ret_int_r
+   168: 08004f70     0 NOTYPE  LOCAL  DEFAULT    1 ret_int_r_2
+   169: 08004fb4     0 NOTYPE  LOCAL  DEFAULT    1 dispatcher_0
+   170: 08004fc8     0 NOTYPE  LOCAL  DEFAULT    1 dispatcher_1
+   171: 08004fe0     0 NOTYPE  LOCAL  DEFAULT    1 dispatcher_2
+   172: 08005040     0 NOTYPE  LOCAL  DEFAULT    1 sil_dly_nse1
+   173: 0800504a     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   174: 00000000     0 FILE    LOCAL  DEFAULT  ABS target_config.c
+   175: 08005084     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   176: 000005c0     0 NOTYPE  LOCAL  DEFAULT    9 $d
+   177: 000020a8     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   178: 00000000     0 FILE    LOCAL  DEFAULT  ABS prc_timer.c
+   179: 080051c4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   180: 00000610     0 NOTYPE  LOCAL  DEFAULT    9 $d
+   181: 00002435     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   182: 00000000     0 FILE    LOCAL  DEFAULT  ABS prc_config.c
+   183: 08005220     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   184: 0800526c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   185: 08005270     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   186: 080052f0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   187: 08005300     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   188: 080054a8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   189: 08008604    16 OBJECT  LOCAL  DEFAULT    2 nvic_sys_pri_reg
+   190: 08008604     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   191: 00000658     0 NOTYPE  LOCAL  DEFAULT    9 $d
+   192: 00000000     0 FILE    LOCAL  DEFAULT  ABS startup.c
+   193: 080054b8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   194: 080054d0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   195: 080054d4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   196: 20001c58     0 NOTYPE  LOCAL  DEFAULT    3 $d
+   197: 000027c3     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   198: 00000000     0 FILE    LOCAL  DEFAULT  ABS task.c
+   199: 08005510     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   200: 08005554     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   201: 08005564     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   202: 08005628     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   203: 08005654     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   204: 08005748     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   205: 08005758     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   206: 080057ac     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   207: 080057c0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   208: 08005840     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   209: 08005858     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   210: 080058c4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   211: 080058d8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   212: 080059dc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   213: 08008614    15 OBJECT  LOCAL  DEFAULT    2 bitmap_search_table
+   214: 08008614     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   215: 00000788     0 NOTYPE  LOCAL  DEFAULT    9 $d
+   216: 00000000     0 FILE    LOCAL  DEFAULT  ABS time_event.c
+   217: 080059f4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   218: 08005a74     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   219: 08005a7c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   220: 08005af0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   221: 08005afc     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   222: 08005ba4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   223: 08005bb0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   224: 08005bd8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   225: 08005be4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   226: 08005d28     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   227: 00000894     0 NOTYPE  LOCAL  DEFAULT    9 $d
+   228: 00000000     0 FILE    LOCAL  DEFAULT  ABS task_manage.c
+   229: 08005d44     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   230: 08005db0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   231: 08005dc4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   232: 08005e10     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   233: 08005e1c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   234: 08005e90     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   235: 08005ea4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   236: 08005f28     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   237: 08005f3c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   238: 08005fc4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   239: 08005fd8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   240: 08006064     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   241: 08006078     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   242: 08006140     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   243: 08006154     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   244: 080061e8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   245: 00000000     0 FILE    LOCAL  DEFAULT  ABS task_sync.c
+   246: 080061fc     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   247: 08006270     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   248: 08006280     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   249: 080062f8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   250: 0800630c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   251: 0800639c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   252: 080063b0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   253: 08006448     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   254: 0800645c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   255: 080064e4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   256: 080064f4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   257: 08006584     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   258: 0800659c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   259: 08006618     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   260: 08006628     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   261: 080066ac     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   262: 080066bc     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   263: 08006768     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   264: 08006780     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   265: 080067f4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   266: 00000000     0 FILE    LOCAL  DEFAULT  ABS task_except.c
+   267: 08006808     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   268: 08006820     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   269: 08006824     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   270: 08006888     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   271: 08006894     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   272: 08006930     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   273: 08006944     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   274: 0800699c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   275: 080069a8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   276: 08006a38     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   277: 08006a50     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   278: 08006ad4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   279: 00000000     0 FILE    LOCAL  DEFAULT  ABS semaphore.c
+   280: 08006ae8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   281: 08006b10     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   282: 08006b1c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   283: 08006bb8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   284: 08006bd4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   285: 08006c44     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   286: 08006c54     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   287: 08006cf0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   288: 08006d08     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   289: 08006d70     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   290: 08006d80     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   291: 08006e04     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   292: 08006e1c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   293: 08006ed4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   294: 08006ef0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   295: 08006fa8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   296: 00000c2c     0 NOTYPE  LOCAL  DEFAULT    9 $d
+   297: 00000000     0 FILE    LOCAL  DEFAULT  ABS time_manage.c
+   298: 08006fc0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   299: 08007008     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   300: 08007014     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   301: 080070c8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   302: 00000000     0 FILE    LOCAL  DEFAULT  ABS cyclic.c
+   303: 080070cc     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   304: 08007120     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   305: 08007130     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   306: 080071a4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   307: 080071b4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   308: 0800721c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   309: 0800722c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   310: 080072d0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   311: 080072dc     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   312: 08007374     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   313: 00000000     0 FILE    LOCAL  DEFAULT  ABS alarm.c
+   314: 0800738c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   315: 080073b4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   316: 080073c0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   317: 08007440     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   318: 08007448     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   319: 080074bc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   320: 080074cc     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   321: 08007534     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   322: 08007544     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   323: 080075e0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   324: 080075f8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   325: 08007668     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   326: 08007678     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   327: 08007714     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   328: 00000000     0 FILE    LOCAL  DEFAULT  ABS sys_manage.c
+   329: 0800772c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   330: 08007784     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   331: 0800778c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   332: 080077c0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   333: 080077c8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   334: 080077f0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   335: 080077f8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   336: 08007850     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   337: 0800785c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   338: 080078c0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   339: 080078cc     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   340: 08007940     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   341: 08007958     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   342: 080079a0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   343: 080079b0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   344: 080079e8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   345: 080079f0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   346: 08007a24     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   347: 08007a2c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   348: 08007a84     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   349: 08007a94     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   350: 08007ae4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   351: 00000000     0 FILE    LOCAL  DEFAULT  ABS interrupt.c
+   352: 08007af4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   353: 08007b1c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   354: 08007b24     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   355: 08007bcc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   356: 08007bd8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   357: 08007c3c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   358: 08007c44     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   359: 08007cec     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   360: 08007cf8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   361: 08007d98     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   362: 00000000     0 FILE    LOCAL  DEFAULT  ABS exception.c
+   363: 08007db0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   364: 08007dcc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   365: 08007dd0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   366: 08007dfc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   367: 08007e00     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   368: 08007e20     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   369: 00000000     0 FILE    LOCAL  DEFAULT  ABS wait.c
+   370: 08007e28     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   371: 08007e84     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   372: 08007e98     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   373: 08007ef4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   374: 08007ef8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   375: 08007f80     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   376: 08007f94     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   377: 08007ff0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   378: 08007ff4     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   379: 08008044     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   380: 0800804c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   381: 080080d8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   382: 080080e8     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   383: 08008150     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   384: 08008158     0 NOTYPE  LOCAL  DEFAULT    1 $t
+   385: 080081c8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   386: 00001124     0 NOTYPE  LOCAL  DEFAULT    9 $d
+   387: 0800402d    22 FUNC    GLOBAL DEFAULT    1 sio_rcv_chr
+   388: 0800772d    12 FUNC    GLOBAL DEFAULT    1 sns_dsp
+   389: 08007a95    96 FUNC    GLOBAL DEFAULT    1 get_tid
+   390: 08005655   260 FUNC    GLOBAL DEFAULT    1 _kernel_call_texrtn
+   391: 08005037     0 FUNC    GLOBAL DEFAULT    1 sil_dly_nse
+   392: 20001c74    24 OBJECT  GLOBAL DEFAULT    3 _kernel_cyccb_table
+   393: 080054d5    24 FUNC    GLOBAL DEFAULT    1 ext_ker
+   394: 08003e4d   144 FUNC    GLOBAL DEFAULT    1 tex_routine
+   395: 08006945   100 FUNC    GLOBAL DEFAULT    1 dis_tex
+   396: 08006281   140 FUNC    GLOBAL DEFAULT    1 can_wup
+   397: 08005859   128 FUNC    GLOBAL DEFAULT    1 _kernel_rotate_ready_queu
+   398: 08006079   220 FUNC    GLOBAL DEFAULT    1 ter_tsk
+   399: 080083a4     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tmax_tskid
+   400: 20001da0     4 OBJECT  GLOBAL DEFAULT    3 _kernel_p_schedtsk
+   401: 20001c8c     0 OBJECT  GLOBAL DEFAULT    3 _kernel_pdqinib_table
+   402: 08007db1    32 FUNC    GLOBAL DEFAULT    1 xsns_dpn
+   403: 08004e21    28 FUNC    GLOBAL DEFAULT    1 _kernel_initialize_object
+   404: 08003f5d    36 FUNC    GLOBAL DEFAULT    1 sio_opn_por
+   405: 08008500     4 OBJECT  GLOBAL DEFAULT    2 _kernel_istk
+   406: 08005389    66 FUNC    GLOBAL DEFAULT    1 _kernel_default_int_handl
+   407: 08007a2d   104 FUNC    GLOBAL DEFAULT    1 iget_tid
+   408: 080066bd   196 FUNC    GLOBAL DEFAULT    1 sus_tsk
+   409: 08004ea9     0 FUNC    GLOBAL DEFAULT    1 _kernel_int_entry
+   410: 080057c1   152 FUNC    GLOBAL DEFAULT    1 _kernel_make_non_runnable
+   411: 08009140     0 NOTYPE  GLOBAL DEFAULT  ABS __exidx_end
+   412: 0800452d   312 FUNC    GLOBAL DEFAULT    1 serial_rea_dat
+   413: 080084ec     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tnum_excno
+   414: 08004939    96 FUNC    GLOBAL DEFAULT    1 logtask_flush
+   415: 080081dc     0 NOTYPE  GLOBAL DEFAULT  ABS _etext
+   416: 080058d9   284 FUNC    GLOBAL DEFAULT    1 _kernel_change_priority
+   417: 08007ff5    88 FUNC    GLOBAL DEFAULT    1 _kernel_wait_complete
+   418: 20001c8c     0 OBJECT  GLOBAL DEFAULT    3 _kernel_pdqcb_table
+   419: 08006ef1   208 FUNC    GLOBAL DEFAULT    1 sig_sem
+   420: 20001c8c     0 OBJECT  GLOBAL DEFAULT    3 _kernel_dtqinib_table
+   421: 0800645d   152 FUNC    GLOBAL DEFAULT    1 tslp_tsk
+   422: 080054b9    28 FUNC    GLOBAL DEFAULT    1 _kernel_exit_kernel
+   423: 08005565    28 FUNC    GLOBAL DEFAULT    1 _kernel_make_dormant
+   424: 08004f99     0 FUNC    GLOBAL DEFAULT    1 _kernel_start_dispatch
+   425: 08007449   132 FUNC    GLOBAL DEFAULT    1 ref_alm
+   426: 08006d09   120 FUNC    GLOBAL DEFAULT    1 pol_sem
+   427: 08007bd9   108 FUNC    GLOBAL DEFAULT    1 get_ipm
+   428: 08009140     0 NOTYPE  GLOBAL DEFAULT  ABS __idata_end
+   429: 20001c8c     0 OBJECT  GLOBAL DEFAULT    3 _kernel_dtqcb_table
+   430: 080043f5   152 FUNC    GLOBAL DEFAULT    1 serial_opn_por
+   431: 08006781   136 FUNC    GLOBAL DEFAULT    1 irel_wai
+   432: 08005afd    48 FUNC    GLOBAL DEFAULT    1 _kernel_tmevtb_insert
+   433: 08005dc5    88 FUNC    GLOBAL DEFAULT    1 get_inf
+   434: 08007b25   180 FUNC    GLOBAL DEFAULT    1 ena_int
+   435: 080052b9    72 FUNC    GLOBAL DEFAULT    1 _kernel_prc_initialize
+   436: 08005271     2 FUNC    GLOBAL DEFAULT    1 _kernel_prc_terminate
+   437: 20001c58     4 OBJECT  GLOBAL DEFAULT    3 _kernel_kerflg
+   438: 080074cd   120 FUNC    GLOBAL DEFAULT    1 stp_alm
+   439: 20001da4     4 OBJECT  GLOBAL DEFAULT    3 _kernel_reqflg
+   440: 20001c5c     4 OBJECT  GLOBAL DEFAULT    3 tex_loop
+   441: 08005be5   352 FUNC    GLOBAL DEFAULT    1 _kernel_signal_time
+   442: 08007015   184 FUNC    GLOBAL DEFAULT    1 get_utm
+   443: 080073c1   136 FUNC    GLOBAL DEFAULT    1 _kernel_call_almhdr
+   444: 08005a19   100 FUNC    GLOBAL DEFAULT    1 _kernel_tmevt_up
+   445: 08006ae9    52 FUNC    GLOBAL DEFAULT    1 _kernel_initialize_semaph
+   446: 080050a1     6 FUNC    GLOBAL DEFAULT    1 _kernel_target_exit
+   447: 08005fd9   160 FUNC    GLOBAL DEFAULT    1 chg_pri
+   448: 080042e1    64 FUNC    GLOBAL DEFAULT    1 serial_ref_por
+   449: 08004099   180 FUNC    GLOBAL DEFAULT    1 syslog_wri_log
+   450: 08005d45   128 FUNC    GLOBAL DEFAULT    1 can_act
+   451: 08004215    24 FUNC    GLOBAL DEFAULT    1 serial_initialize
+   452: 08007ef9   156 FUNC    GLOBAL DEFAULT    1 _kernel_wait_tmout
+   453: 080050a9   284 FUNC    GLOBAL DEFAULT    1 _kernel_target_initialize
+   454: 20001da8   128 OBJECT  GLOBAL DEFAULT    3 _kernel_ready_queue
+   455: 08003f81    12 FUNC    GLOBAL DEFAULT    1 sio_cls_por
+   456: 08005085    28 FUNC    GLOBAL DEFAULT    1 target_fput_log
+   457: 08009140     0 NOTYPE  GLOBAL DEFAULT  ABS __exidx_start
+   458: 20001c8c    32 OBJECT  GLOBAL DEFAULT    3 _kernel_semcb_table
+   459: 080071b5   120 FUNC    GLOBAL DEFAULT    1 stp_cyc
+   460: 20001e44     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_end
+   461: 080083a8   160 OBJECT  GLOBAL DEFAULT    2 _kernel_tinib_table
+   462: 08004fb5     0 FUNC    GLOBAL DEFAULT    1 _kernel_exit_and_dispatch
+   463: 20001cac     0 OBJECT  GLOBAL DEFAULT    3 _kernel_mbxinib_table
+   464: 20001c60     3 OBJECT  GLOBAL DEFAULT    3 message
+   465: 08007af5    48 FUNC    GLOBAL DEFAULT    1 _kernel_initialize_interr
+   466: 080084a8    12 OBJECT  GLOBAL DEFAULT    2 _kernel_alminib_table
+   467: 20001cac     0 OBJECT  GLOBAL DEFAULT    3 _kernel_flginib_table
+   468: 080079b1    64 FUNC    GLOBAL DEFAULT    1 iloc_cpu
+   469: 0800804d   156 FUNC    GLOBAL DEFAULT    1 _kernel_init_wait_queue
+   470: 080053cd   236 FUNC    GLOBAL DEFAULT    1 _kernel_x_config_int
+   471: 08008480     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tmax_pdqid
+   472: 20001c64     4 OBJECT  GLOBAL DEFAULT    3 task_loop
+   473: 20001cac    56 OBJECT  GLOBAL DEFAULT    3 _kernel_tmevt_heap
+   474: 080084a4     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tmax_almid
+   475: 0800435d   152 FUNC    GLOBAL DEFAULT    1 serial_cls_por
+   476: 20001e28     4 OBJECT  GLOBAL DEFAULT    3 _kernel_dspflg
+   477: 080084b8    24 OBJECT  GLOBAL DEFAULT    2 _kernel_inhinib_table
+   478: 080075f9   128 FUNC    GLOBAL DEFAULT    1 istp_alm
+   479: 080079f1    60 FUNC    GLOBAL DEFAULT    1 loc_cpu
+   480: 08006fc1    84 FUNC    GLOBAL DEFAULT    1 get_tim
+   481: 0800774d    18 FUNC    GLOBAL DEFAULT    1 sns_loc
+   482: 20001e2c     2 OBJECT  GLOBAL DEFAULT    3 _kernel_ready_primap
+   483: 20001ce4    20 OBJECT  GLOBAL DEFAULT    3 _kernel_almcb_table
+   484: 08007f95    96 FUNC    GLOBAL DEFAULT    1 _kernel_wobj_make_wait
+   485: 20001e30     4 OBJECT  GLOBAL DEFAULT    3 _kernel_disdsp
+   486: 08007dd1    48 FUNC    GLOBAL DEFAULT    1 xsns_xpn
+   487: 08007739    20 FUNC    GLOBAL DEFAULT    1 sns_ker
+   488: 0800778d    16 FUNC    GLOBAL DEFAULT    1 sns_ctx
+   489: 08005581    30 FUNC    GLOBAL DEFAULT    1 _kernel_make_active
+   490: 08004ded    16 FUNC    GLOBAL DEFAULT    1 _kernel_call_terrtn
+   491: 08005ea5   152 FUNC    GLOBAL DEFAULT    1 iact_tsk
+   492: 08006809    28 FUNC    GLOBAL DEFAULT    1 sns_tex
+   493: 08007c45   180 FUNC    GLOBAL DEFAULT    1 dis_int
+   494: 080069a9   168 FUNC    GLOBAL DEFAULT    1 iras_tex
+   495: 0800779d    44 FUNC    GLOBAL DEFAULT    1 iunl_cpu
+   496: 08006825   112 FUNC    GLOBAL DEFAULT    1 ena_tex
+   497: 08008460    24 OBJECT  GLOBAL DEFAULT    2 _kernel_seminib_table
+   498: 20001e38     4 OBJECT  GLOBAL DEFAULT    3 _kernel_current_time
+   499: 08004665   144 FUNC    GLOBAL DEFAULT    1 serial_wri_dat
+   500: 08005301    68 FUNC    GLOBAL DEFAULT    1 enable_exc
+   501: 08006bd5   128 FUNC    GLOBAL DEFAULT    1 ini_sem
+   502: 080030ed     0 FUNC    GLOBAL DEFAULT    1 _start
+   503: 08008490    20 OBJECT  GLOBAL DEFAULT    2 _kernel_cycinib_table
+   504: 0800630d   164 FUNC    GLOBAL DEFAULT    1 iwup_tsk
+   505: 080031c1   116 FUNC    GLOBAL DEFAULT    1 cyclic_handler
+   506: 08004045    40 FUNC    GLOBAL DEFAULT    1 print_banner
+   507: 080064f5   168 FUNC    GLOBAL DEFAULT    1 dly_tsk
+   508: 080063b1   172 FUNC    GLOBAL DEFAULT    1 wup_tsk
+   509: 080078cd   140 FUNC    GLOBAL DEFAULT    1 ena_dsp
+   510: 00000000     0 NOTYPE  GLOBAL DEFAULT  ABS software_term_hook
+   511: 20001e34     4 OBJECT  GLOBAL DEFAULT    3 _kernel_p_runtsk
+   512: 08005a7d   128 FUNC    GLOBAL DEFAULT    1 _kernel_tmevt_down
+   513: 080084f0    12 OBJECT  GLOBAL DEFAULT    2 _kernel_excinib_table
+   514: 00000000     0 NOTYPE  GLOBAL DEFAULT  ABS software_init_hook
+   515: 080070cd   100 FUNC    GLOBAL DEFAULT    1 _kernel_initialize_cyclic
+   516: 0800501f     0 FUNC    GLOBAL DEFAULT    1 _kernel_start_r
+   517: 08008508   236 OBJECT  GLOBAL DEFAULT    2 _kernel_exc_tbl
+   518: 080077c9    48 FUNC    GLOBAL DEFAULT    1 unl_cpu
+   519: 08003235   716 FUNC    GLOBAL DEFAULT    1 task
+   520: 08005b2d   132 FUNC    GLOBAL DEFAULT    1 _kernel_tmevtb_delete
+   521: 0800659d   140 FUNC    GLOBAL DEFAULT    1 slp_tsk
+   522: 08007545   180 FUNC    GLOBAL DEFAULT    1 sta_alm
+   523: 080085f4    16 OBJECT  GLOBAL DEFAULT    2 _kernel_bitpat_cfgint
+   524: 08004bb5    34 FUNC    GLOBAL DEFAULT    1 syslog_lostmsg
+   525: 080077f9   100 FUNC    GLOBAL DEFAULT    1 irot_rdq
+   526: 08004275   108 FUNC    GLOBAL DEFAULT    1 sio_irdy_snd
+   527: 0800848c     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tmax_cycid
+   528: 20001cf8     0 OBJECT  GLOBAL DEFAULT    3 _kernel_mpfcb_table
+   529: 08003000   236 OBJECT  GLOBAL DEFAULT    1 _kernel_vector_table
+   530: 20001cf8   160 OBJECT  GLOBAL DEFAULT    3 _kernel_tcb_table
+   531: 20000000     0 NOTYPE  GLOBAL DEFAULT    3 __bss_start
+   532: 08008478     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tmax_flgid
+   533: 080072dd   176 FUNC    GLOBAL DEFAULT    1 sta_cyc
+   534: 08006629   148 FUNC    GLOBAL DEFAULT    1 rsm_tsk
+   535: 08003f8d    16 FUNC    GLOBAL DEFAULT    1 sio_snd_chr
+   536: 08007761    44 FUNC    GLOBAL DEFAULT    1 sns_dpn
+   537: 20001d98     4 OBJECT  GLOBAL DEFAULT    3 _kernel_saved_iipm
+   538: 08004e3d    10 FUNC    GLOBAL DEFAULT    1 _kernel_inthdr_53
+   539: 00000000     0 NOTYPE  GLOBAL DEFAULT  ABS hardware_init_hook
+   540: 08006155   168 FUNC    GLOBAL DEFAULT    1 ext_tsk
+   541: 08006895   176 FUNC    GLOBAL DEFAULT    1 ras_tex
+   542: 08004bd9   208 FUNC    GLOBAL DEFAULT    1 syslog
+   543: 080084d4    24 OBJECT  GLOBAL DEFAULT    2 _kernel_intinib_table
+   544: 0800722d   176 FUNC    GLOBAL DEFAULT    1 _kernel_call_cychdr
+   545: 08004f73     0 FUNC    GLOBAL DEFAULT    1 _kernel_svc_handler
+   546: 08003000     0 NOTYPE  GLOBAL DEFAULT    1 __text
+   547: 08003fb9    32 FUNC    GLOBAL DEFAULT    1 sio_dis_cbr
+   548: 08008488     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tmax_mpfid
+   549: 080054ed    34 FUNC    GLOBAL DEFAULT    1 sta_ker
+   550: 08006c55   180 FUNC    GLOBAL DEFAULT    1 twai_sem
+   551: 08005f3d   156 FUNC    GLOBAL DEFAULT    1 act_tsk
+   552: 08008159   132 FUNC    GLOBAL DEFAULT    1 _kernel_wait_tmout_ok
+   553: 08004ca9    66 FUNC    GLOBAL DEFAULT    1 t_perror
+   554: 20001e3c     4 OBJECT  GLOBAL DEFAULT    3 _kernel_next_time
+   555: 08005221    80 FUNC    GLOBAL DEFAULT    1 set_exc_int_priority
+   556: 080084fc     4 OBJECT  GLOBAL DEFAULT    2 _kernel_istksz
+   557: 20001d98     0 OBJECT  GLOBAL DEFAULT    3 _kernel_mpfinib_table
+   558: 20001d9c     4 OBJECT  GLOBAL DEFAULT    3 _kernel_lock_flag
+   559: 08007e99    96 FUNC    GLOBAL DEFAULT    1 _kernel_wobj_make_wait_tm
+   560: 080051d5    18 FUNC    GLOBAL DEFAULT    1 target_timer_handler
+   561: 0800414d    60 FUNC    GLOBAL DEFAULT    1 syslog_ref_log
+   562: 08003ff9    52 FUNC    GLOBAL DEFAULT    1 sio_isr
+   563: 0800406d    26 FUNC    GLOBAL DEFAULT    1 syslog_initialize
+   564: 08007679   180 FUNC    GLOBAL DEFAULT    1 ista_alm
+   565: 08007e29   112 FUNC    GLOBAL DEFAULT    1 _kernel_make_wait_tmout
+   566: 08003edd    72 FUNC    GLOBAL DEFAULT    1 target_usart_init
+   567: 08004189   104 FUNC    GLOBAL DEFAULT    1 syslog_rea_log
+   568: 080059f5    36 FUNC    GLOBAL DEFAULT    1 _kernel_initialize_tmevt
+   569: 08007e01    40 FUNC    GLOBAL DEFAULT    1 _kernel_initialize_except
+   570: 08007959    88 FUNC    GLOBAL DEFAULT    1 dis_dsp
+   571: 0800847c     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tmax_dtqid
+   572: 0800314d   116 FUNC    GLOBAL DEFAULT    1 alarm_handler
+   573: 080051e9    54 FUNC    GLOBAL DEFAULT    1 target_timer_initialize
+   574: 080046f5   286 FUNC    GLOBAL DEFAULT    1 sio_irdy_rcv
+   575: 08004a45   320 FUNC    GLOBAL DEFAULT    1 syslog_printf
+   576: 20000000     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+   577: 20001e44     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+   578: 080080e9   112 FUNC    GLOBAL DEFAULT    1 _kernel_wait_release
+   579: 0800845c     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tmax_semid
+   580: 0800785d   112 FUNC    GLOBAL DEFAULT    1 rot_rdq
+   581: 08004815   124 FUNC    GLOBAL DEFAULT    1 logtask_terminate
+   582: 08003d35   280 FUNC    GLOBAL DEFAULT    1 cpuexc_handler
+   583: 08004b85    48 FUNC    GLOBAL DEFAULT    1 syslog_print
+   584: 0800500f     0 FUNC    GLOBAL DEFAULT    1 _kernel_call_exit_kernel
+   585: 08005345    68 FUNC    GLOBAL DEFAULT    1 disable_exc
+   586: 20001c68    12 OBJECT  GLOBAL DEFAULT    3 siopcb_table
+   587: 080084b4     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tnum_inhno
+   588: 08005e1d   136 FUNC    GLOBAL DEFAULT    1 get_pri
+   589: 08008504     4 OBJECT  GLOBAL DEFAULT    2 _kernel_istkpt
+   590: 08004e75     0 FUNC    GLOBAL DEFAULT    1 _kernel_exc_entry
+   591: 080084d0     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tnum_intno
+   592: 08009140     0 NOTYPE  GLOBAL DEFAULT  ABS __idata_start
+   593: 08008448    20 OBJECT  GLOBAL DEFAULT    2 _kernel_torder_table
+   594: 20001d98     0 OBJECT  GLOBAL DEFAULT    3 _kernel_flgcb_table
+   595: 08004e49     0 FUNC    GLOBAL DEFAULT    1 _kernel_dispatch
+   596: 08007131   132 FUNC    GLOBAL DEFAULT    1 ref_cyc
+   597: 08006b1d   184 FUNC    GLOBAL DEFAULT    1 ref_sem
+   598: 08004089    16 FUNC    GLOBAL DEFAULT    1 syslog_msk_log
+   599: 08008484     4 OBJECT  GLOBAL DEFAULT    2 _kernel_tmax_mbxid
+   600: 08007cf9   184 FUNC    GLOBAL DEFAULT    1 chg_ipm
+   601: 08003f41    26 FUNC    GLOBAL DEFAULT    1 sio_initialize
+   602: 08004ced   256 FUNC    GLOBAL DEFAULT    1 itron_strerror
+   603: 0800738d    52 FUNC    GLOBAL DEFAULT    1 _kernel_initialize_alarm
+   604: 08005bb1    52 FUNC    GLOBAL DEFAULT    1 _kernel_tmevt_lefttim
+   605: 080051c5    14 FUNC    GLOBAL DEFAULT    1 target_timer_terminate
+   606: 080061fd   132 FUNC    GLOBAL DEFAULT    1 rel_wai
+   607: 20001d98     0 OBJECT  GLOBAL DEFAULT    3 _kernel_mbxcb_table
+   608: 08003501  2100 FUNC    GLOBAL DEFAULT    1 main_task
+   609: 20000000     0 NOTYPE  GLOBAL DEFAULT    2 __data_start
+   610: 08006a51   152 FUNC    GLOBAL DEFAULT    1 ref_tex
+   611: 08006e1d   212 FUNC    GLOBAL DEFAULT    1 isig_sem
+   612: 08003fd9    32 FUNC    GLOBAL DEFAULT    1 sio_ena_cbr
+   613: 080055a1   180 FUNC    GLOBAL DEFAULT    1 _kernel_initialize_task
+   614: 08005759   104 FUNC    GLOBAL DEFAULT    1 _kernel_search_schedtsk
+   615: 0800422d    72 FUNC    GLOBAL DEFAULT    1 serial_get_chr
+   616: 08004dfd    34 FUNC    GLOBAL DEFAULT    1 _kernel_call_inirtn
+   617: 08003f9d    28 FUNC    GLOBAL DEFAULT    1 sio_pol_snd_chr
+   618: 08006d81   156 FUNC    GLOBAL DEFAULT    1 wai_sem
+   619: 080048b1   136 FUNC    GLOBAL DEFAULT    1 logtask_main
+   620: 08005275    66 FUNC    GLOBAL DEFAULT    1 _kernel_default_exc_handl
+   621: 08003f25    26 FUNC    GLOBAL DEFAULT    1 target_usart_term
+   622: 08005511    84 FUNC    GLOBAL DEFAULT    1 _kernel_make_runnable
+   623: 20001e40     4 OBJECT  GLOBAL DEFAULT    3 _kernel_last_index
+   624: 08004321    60 FUNC    GLOBAL DEFAULT    1 serial_ctl_por
+
+No version information found in this file.
+Attribute Section: aeabi
+File Attributes
+  Tag_CPU_name: "CORTEX-M3"
+  Tag_CPU_arch: v7
+  Tag_CPU_arch_profile: Microcontroller
+  Tag_THUMB_ISA_use: Thumb-2
+  Tag_ABI_PCS_wchar_t: 4
+  Tag_ABI_FP_denormal: Needed
+  Tag_ABI_FP_exceptions: Needed
+  Tag_ABI_FP_number_model: IEEE 754
+  Tag_ABI_align8_needed: Yes
+  Tag_ABI_align8_preserved: Yes, except leaf SP
+  Tag_ABI_enum_size: small

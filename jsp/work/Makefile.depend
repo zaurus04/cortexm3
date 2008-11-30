@@ -1,0 +1,606 @@
+kernel_cfg.c kernel_id.h kernel_chk.c: \
+	../config/armv7m/cq_starm/hw_serial.cfg \
+	../config/armv7m/tool_config.h ../include/t_syslog.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h ../systask/logtask.cfg \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../include/s_services.h sample1.h \
+	../config/armv7m/cq_starm/sys_defs.h ../systask/timer.cfg \
+	../config/armv7m/cq_starm/hw_serial.h \
+	../config/armv7m/cpu_defs.h sample1.cfg \
+	../config/armv7m/cpu_config.h ../include/itron.h \
+	../config/armv7m/cq_starm/hw_timer.h ../systask/serial.cfg \
+	../config/armv7m/tool_defs.h ../include/t_services.h \
+	../include/sil.h ../include/t_stddef.h \
+	../config/armv7m/cq_starm/sys_config.h 
+makeoffset.s: ../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../kernel/task.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../config/armv7m/makeoffset.c ../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/queue.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+kernel_chk.s: ../kernel/semaphore.h ../kernel/jsp_kernel.h \
+	../config/armv7m/tool_config.h ../kernel/dataqueue.h \
+	../config/armv7m/cpu_rename.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/wait.h ../config/armv7m/cq_starm/sys_rename.h \
+	../include/timer.h ../kernel/time_event.h kernel_chk.c \
+	../kernel/interrupt.h ../kernel/cyclic.h \
+	../config/armv7m/cpu_insn.h ../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../config/armv7m/tool_defs.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h \
+	../include/t_syslog.h ../kernel/task.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../config/armv7m/cq_starm/sys_defs.h ../kernel/eventflag.h \
+	../kernel/exception.h ../kernel/mempfix.h ../kernel/queue.h \
+	../config/armv7m/cpu_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/logtask.h ../include/itron.h ../kernel/mailbox.h \
+	../kernel/jsp_rename.h 
+cpu_support.o: ./offset.h ../kernel/jsp_kernel.h \
+	../config/armv7m/tool_config.h ../include/t_syslog.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_rename.h \
+	../include/kernel.h ../config/armv7m/cpu_support.S \
+	../config/armv7m/cpu_config.h ../include/t_config.h \
+	../include/itron.h ../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	../config/armv7m/tool_defs.h ../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+startup.o: ../kernel/syslog.h ../kernel/jsp_kernel.h \
+	../config/armv7m/tool_config.h ../include/t_syslog.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/startup.c \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+banner.o: ../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../config/armv7m/cpu_rename.h \
+	../include/kernel.h ../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../kernel/banner.c \
+	../config/armv7m/tool_defs.h ../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+sys_config.o: ../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../config/armv7m/cq_starm/sys_config.c \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../include/sil.h ../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+usart.o: ../config/armv7m/tool_config.h ../include/t_syslog.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h ../include/s_services.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../config/armv7m/cq_starm/usart.c \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/cq_starm/usart.h \
+	../config/armv7m/tool_defs.h ../include/sil.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+cpu_config.o: ../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../kernel/task.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/queue.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/cpu_config.c \
+	../config/armv7m/tool_defs.h ../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+tskini.o tsksched.o tskrun.o tsknrun.o tskdmt.o tskact.o tskext.o tskpri.o tskrot.o tsktex.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../config/armv7m/cpu_context.h \
+	../kernel/task.h ../config/armv7m/cpu_rename.h \
+	../include/kernel.h ../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/task.c \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/queue.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+waimake.o waicmp.o waitmo.o waitmook.o waican.o wairel.o wobjwai.o wobjwaitmo.o wobjpri.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../kernel/task.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/wait.h ../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/queue.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	../kernel/wait.c \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+tmeini.o tmeup.o tmedown.o tmeins.o tmedel.o isig_tim.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../config/armv7m/cpu_rename.h \
+	../include/kernel.h ../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../config/armv7m/cpu_defs.h \
+	../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../kernel/time_event.c \
+	../config/armv7m/tool_defs.h ../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+logini.o vwri_log.o vrea_log.o vmsk_log.o logter.o: \
+	../kernel/syslog.h ../kernel/jsp_kernel.h \
+	../config/armv7m/tool_config.h ../include/t_syslog.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	../kernel/syslog.c \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../config/armv7m/cpu_defs.h \
+	../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+act_tsk.o iact_tsk.o can_act.o ext_tsk.o ter_tsk.o chg_pri.o get_pri.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../kernel/task.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../kernel/wait.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/task_manage.c ../kernel/time_event.h \
+	../kernel/queue.h ../config/armv7m/cpu_defs.h \
+	../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+slp_tsk.o tslp_tsk.o wup_tsk.o iwup_tsk.o can_wup.o rel_wai.o irel_wai.o sus_tsk.o rsm_tsk.o frsm_tsk.o dly_tsk.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../kernel/task.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../kernel/wait.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/queue.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	../kernel/task_sync.c \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+ras_tex.o iras_tex.o dis_tex.o ena_tex.o sns_tex.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../kernel/task.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/queue.h \
+	../kernel/task_except.c ../config/armv7m/cpu_defs.h \
+	../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+semini.o sig_sem.o isig_sem.o wai_sem.o pol_sem.o twai_sem.o: \
+	../kernel/semaphore.h ../kernel/jsp_kernel.h \
+	../config/armv7m/tool_config.h ../include/t_syslog.h \
+	../kernel/task.h ../config/armv7m/cpu_rename.h \
+	../include/kernel.h ../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../kernel/wait.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/queue.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h \
+	../kernel/semaphore.c 
+flgini.o flgcnd.o set_flg.o iset_flg.o clr_flg.o wai_flg.o pol_flg.o twai_flg.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../kernel/task.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../kernel/eventflag.c ../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../kernel/wait.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/eventflag.h ../kernel/time_event.h \
+	../kernel/queue.h ../config/armv7m/cpu_defs.h \
+	../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+dtqini.o dtqenq.o dtqfenq.o dtqdeq.o dtqsnd.o dtqrcv.o snd_dtq.o psnd_dtq.o ipsnd_dtq.o tsnd_dtq.o fsnd_dtq.o ifsnd_dtq.o rcv_dtq.o prcv_dtq.o trcv_dtq.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../kernel/dataqueue.h ../include/t_syslog.h ../kernel/task.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../kernel/wait.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/dataqueue.c \
+	../kernel/queue.h ../config/armv7m/cpu_defs.h \
+	../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+mbxini.o snd_mbx.o rcv_mbx.o prcv_mbx.o trcv_mbx.o: \
+	../kernel/jsp_kernel.h ../kernel/mailbox.c \
+	../config/armv7m/tool_config.h ../include/t_syslog.h \
+	../kernel/task.h ../config/armv7m/cpu_rename.h \
+	../include/kernel.h ../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../kernel/wait.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/queue.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../kernel/mailbox.h \
+	../config/armv7m/tool_defs.h ../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+mpfini.o mpfget.o get_mpf.o pget_mpf.o tget_mpf.o rel_mpf.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../kernel/mempfix.c ../kernel/task.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../kernel/wait.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/mempfix.h ../kernel/queue.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+set_tim.o get_tim.o vxget_tim.o: ../kernel/jsp_kernel.h \
+	../config/armv7m/tool_config.h ../include/t_syslog.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../include/s_services.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/time_manage.c \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/cq_starm/hw_timer.h \
+	../config/armv7m/tool_defs.h ../include/sil.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+cycini.o cycenq.o sta_cyc.o stp_cyc.o cyccal.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../config/armv7m/cpu_rename.h \
+	../include/kernel.h ../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/cyclic.c ../kernel/queue.h \
+	../config/armv7m/cpu_defs.h ../kernel/cyclic.h \
+	../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+rot_rdq.o irot_rdq.o get_tid.o iget_tid.o loc_cpu.o iloc_cpu.o unl_cpu.o iunl_cpu.o dis_dsp.o ena_dsp.o sns_ctx.o sns_loc.o sns_dsp.o sns_dpn.o vsns_ini.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../kernel/task.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../kernel/check.h ../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/queue.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/sys_manage.c ../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+inhini.o: ../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../config/armv7m/cpu_rename.h \
+	../include/kernel.h ../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/interrupt.h ../kernel/interrupt.c \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+excini.o vxsns_ctx.o vxsns_loc.o vxsns_dsp.o vxsns_dpn.o vxsns_tex.o: \
+	../kernel/jsp_kernel.h ../config/armv7m/tool_config.h \
+	../include/t_syslog.h ../kernel/task.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../kernel/time_event.h ../kernel/exception.h \
+	../kernel/queue.h ../config/armv7m/cpu_defs.h \
+	../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../kernel/exception.c \
+	../config/armv7m/tool_defs.h ../kernel/jsp_rename.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+start.o: ../config/armv7m/cpu_config.h ../include/t_config.h \
+	../config/armv7m/tool_config.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/start.S ../config/armv7m/cpu_rename.h \
+	../config/armv7m/cq_starm/sys_config.h 
+sample1.o: ../include/t_syslog.h ../include/kernel.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	sample1.h ../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../include/serial.h sample1.c ../config/armv7m/cpu_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h kernel_id.h ../config/armv7m/tool_defs.h \
+	../include/t_services.h ../include/t_stddef.h 
+timer.o: ../config/armv7m/tool_config.h ../include/t_syslog.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../include/s_services.h ../config/armv7m/cq_starm/sys_defs.h \
+	../systask/timer.c \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../include/timer.h ../include/serial.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/cq_starm/hw_timer.h \
+	../config/armv7m/tool_defs.h ../include/sil.h \
+	../include/t_services.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+serial.o: ../config/armv7m/tool_config.h ../include/t_syslog.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	./kernel_id.h ../config/armv7m/cq_starm/sys_rename.h \
+	../include/s_services.h ../config/armv7m/cq_starm/sys_defs.h \
+	../systask/serial.c \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../include/serial.h ../config/armv7m/cq_starm/hw_serial.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/cq_starm/usart.h \
+	../config/armv7m/tool_defs.h ../include/sil.h \
+	../include/t_services.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+logtask.o: ../config/armv7m/tool_config.h ../include/t_syslog.h \
+	../config/armv7m/cpu_rename.h ../include/kernel.h \
+	../include/t_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../config/armv7m/cq_starm/sys_rename.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../systask/logtask.c ../include/serial.h \
+	../config/armv7m/cpu_defs.h ../config/armv7m/cpu_insn.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/logtask.h ../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../include/t_services.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h 
+log_output.o: ../include/serial.h ../library/log_output.c \
+	../include/t_syslog.h ../config/armv7m/cpu_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/kernel.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../include/itron.h ../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../config/armv7m/tool_defs.h ../include/t_services.h \
+	../include/t_stddef.h 
+vasyslog.o: ../include/t_syslog.h ../include/kernel.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stdarg.h \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../library/vasyslog.c ../include/serial.h \
+	../config/armv7m/cpu_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../include/itron.h ../config/armv7m/tool_defs.h \
+	../include/t_services.h ../include/t_stddef.h 
+t_perror.o: ../include/serial.h ../include/t_syslog.h \
+	../config/armv7m/cpu_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/kernel.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../include/itron.h ../library/t_perror.c \
+	../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../config/armv7m/tool_defs.h ../include/t_services.h \
+	../include/t_stddef.h 
+strerror.o: ../include/serial.h ../include/t_syslog.h \
+	../config/armv7m/cpu_defs.h ../library/strerror.c \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/kernel.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	../include/itron.h ../config/armv7m/cq_starm/sys_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../config/armv7m/tool_defs.h ../include/t_services.h \
+	../include/t_stddef.h 
+kernel_cfg.o: ./../kernel/semaphore.h ./../kernel/mempfix.h \
+	./../kernel/mailbox.h ../config/armv7m/tool_config.h \
+	./../kernel/task.h ../config/armv7m/cpu_rename.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/newlib.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/limits.h \
+	kernel_cfg.c ../include/s_services.h sample1.h \
+	../config/armv7m/cq_starm/sys_rename.h ../include/timer.h \
+	./../kernel/time_event.h ./../kernel/queue.h \
+	../include/serial.h ../config/armv7m/cpu_unrename.h \
+	./../kernel/interrupt.h ../config/armv7m/cpu_insn.h \
+	./../kernel/eventflag.h ./../kernel/jsp_unrename.h \
+	../config/armv7m/cpu_config.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include/stddef.h \
+	../config/armv7m/cq_starm/usart.h \
+	../config/armv7m/tool_defs.h ../include/sil.h \
+	../include/kernel_cfg.h ./../kernel/exception.h \
+	../config/armv7m/cq_starm/sys_config.h ../include/t_stddef.h \
+	../include/t_syslog.h ../include/kernel.h \
+	../config/armv7m/cq_starm/sys_unrename.h \
+	../include/t_config.h ./../kernel/jsp_kernel.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/include-fixed/syslimits.h \
+	../config/armv7m/cq_starm/sys_defs.h ./../kernel/dataqueue.h \
+	../config/armv7m/cq_starm/hw_serial.h \
+	../config/armv7m/cpu_defs.h \
+	/usr/local/arm/bin/../lib/gcc/arm-none-eabi/4.2.3/../../../../arm-none-eabi/include/limits.h \
+	../include/logtask.h ./../kernel/jsp_rename.h \
+	../include/itron.h ./../kernel/cyclic.h \
+	../config/armv7m/cq_starm/hw_timer.h kernel_id.h \
+	../include/t_services.h 

@@ -1,0 +1,12 @@
+// Hitex/Gn/12.07.2007 
+// Executable Script file for HiTOP Debugger
+// Target Hitex evaluation board with STM32
+// Flash application
+
+// Reset    
+RESET TARGET
+
+// execute program till main
+Go UNTIL main
+wait
+
